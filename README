@@ -12,5 +12,6 @@
 
 - Adding the border mapping to existing code.
 	Implementation will only affect the code after partitioning !
+	Change devicePartitions to use the mapping
+	Change every code of borer request.
 
-- Adding child datastructures in CPU and GPU
