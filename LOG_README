@@ -1,0 +1,2 @@
+DATED		Time		What
+24/8/15		1:59		Added cudaFree(items) and free in dealloc of worklist.h
