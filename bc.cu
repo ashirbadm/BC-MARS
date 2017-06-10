@@ -247,6 +247,11 @@ unsigned ii;
         nodedist[source] = 0;
 }
 
+/*
+ Comparision between Border Vector and Border Matrix 
+ To find the lesser distances and increase the sigma
+ of the corresponding change.
+ */
 void borderMatrixVector_comp (struct matrix_csr *M, unsigned *Vin,unsigned *Vout,unsigned *S_V,unsigned Bcount)
 {
 	unsigned *bV = (unsigned *)malloc (sizeof(unsigned) * Bcount);
@@ -1106,25 +1111,32 @@ int main(int argc, char *argv[]) {
 	    borderVector_gpu2 = (unsigned int *) malloc (sizeof(unsigned int) * borderCount_gpu);
 	    borderSigma_cpu = (unsigned int *) malloc (sizeof(unsigned int) * borderCount_cpu);
 	    borderSigma_gpu = (unsigned int *) malloc (sizeof(unsigned int) * borderCount_gpu);
-		 /*Executing border matrix functions */
-		/* Branching off a thread for gpu computation*/
+
+	    /*Preprocessing Step:- Executing border matrix functions */
+	   /* Branching off a thread for gpu computation*/
 	    pthread_create(&thread1,NULL,gpu_BorderMatrix_comp,&(data_gpu));
 	    cpu_BorderMatrix_comp(&P);
 	    pthread_join(thread1,NULL);
 	
 	    unsigned s_count_gpu=0,s_count_cpu=0;
-	    unsigned num_srcs=1000;
+	    unsigned num_srcs=1;
 	    srand (time(NULL));
 	init_end = rtclock(); // initialization end time
         printf("\nInitialization Runtime = %.3lf ms\n", 1000*(init_end-init_start));
+
+	/* BC algorithm starts */
 	Finalstarttime = rtclock(); // start timing for bfs	 
-//BRANDE's algo phase 1 Performing BFS/SSSP from each source
+
+/* Iterating over each vertex in the graph considering it as the Source */	
 for (int iter=0 ; iter < num_srcs ; iter++) { // num_srcs for the number of sources to perform BC on
+//BRANDE's algo phase 1 Performing BFS/SSSP from each source
 try{
 	fwdph_starttime = rtclock(); // start timing for bfs	 
 	printf("\nIteration# %d",iter);
-//	source = 0;
+
+	source = 0;
 	// Selecting the sources
+	/*
 	if(s_count_cpu < num_srcs/2){
 		s_count_cpu++;
 		while(1){
@@ -1138,6 +1150,7 @@ try{
 		if(graph.partition.part[source]==GPUPARTITION)break;
 	        }
 	}else{break;}
+	*/
 
 	/*Initializing data structures*/
 	//GPU data
@@ -1206,6 +1219,7 @@ try{
 		//for(int ii=0;ii < graph.nnodes ;ii++)
 		//	printf("%d %d\n",ii+1,graph.devicePartition[graph.partition.part[CPUPARTITION]].nodesigma[ii]);
 		starttime = rtclock(); // start timing for bfs	 
+
 	// ITERATIVE step
    	      while(1){
 		iterations++;
@@ -1241,7 +1255,7 @@ try{
 		borderMatrixVector_comp (&borderMatrix_cpu,borderVector_cpu2,borderVector_cpu1,borderSigma_cpu,borderCount_cpu);
 		//tmpendtime=rtclock();
 		/* Check stopping condition */
-		if (Equals (borderVector_cpu1,borderVector_cpu2,borderCount_cpu) || iterations==5)
+		if (Equals (borderVector_cpu1,borderVector_cpu2,borderCount_cpu) )
 			break;
 		}
            endtime = rtclock();
@@ -1334,6 +1348,7 @@ try{
 	   op.close();
 	   sigop.close();
 	   }
+
 // BACKWARD PHASE STARTS	
 	   bckph_starttime = rtclock();
 	   /* BACKWARD PHASE */
