@@ -131,13 +131,181 @@ void initnodesigmadist(unsigned source, unsigned nodes, unsigned* nodesigma, uns
 unsigned ii;
 	for (ii = 0; ii < nodes; ii++) {
            nodesigma[ii] = 0;
-           nodedist[ii] = MYINFINITY;
+           nodedist[ii] = MYINFINITY;#ifdef _OPENMP
+#pragma omp parallel default(shared)
+#endif
+{
+#ifdef _OPENMP
+#pragma omp sections 
+#endif
+{	
+	#ifdef _OPENMP
+	#pragma omp section
+	#endif
+	{
+		memset(graph.devicePartition[CPUPARTITION].edgesigma,0,((graph.devicePartition[CPUPARTITION].numEdges) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[CPUPARTITION].nodesigma,0,((graph.nnodes) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[CPUPARTITION].nodedelta,0,((graph.nnodes) * sizeof(float)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[CPUPARTITION].nodedist,MYINFINITY,((graph.nnodes) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[GPUPARTITION].edgesigma,0,((graph.devicePartition[GPUPARTITION].numEdges) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[GPUPARTITION].nodesigma,0,((graph.nnodes) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[GPUPARTITION].nodedelta,0,((graph.nnodes) * sizeof(float)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[GPUPARTITION].nodedist,MYINFINITY,((graph.nnodes) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+	 /* Initializing all border Vectors */
+	 for(borderIndex=0; borderIndex < borderCount_gpu; borderIndex++){
+   		borderVector_gpu1[borderIndex] = borderVector_gpu2[borderIndex] = MYINFINITY;
+		borderSigma_gpu[borderIndex] = 0;
+		}
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+	  for(borderIndex=0; borderIndex < borderCount_cpu; borderIndex++){
+		borderVector_cpu1[borderIndex] =  borderVector_cpu2[borderIndex] = MYINFINITY;
+		borderSigma_cpu[borderIndex] = 0;
+		}
+	}}  {
+	#ifdef _OPENMP
+      //  #pragma omp section
+        #endif
+        {
+               cudaStreamSynchronize(sone);
+	       cudaStreamSynchronize(stwo);
+     	       cudaStreamSynchronize(sthree);
+
+        }
+	}}
         }
         nodesigma[source] = 1;
         nodedist[source] = 0;
 }
 void initnodesigmadist_multisource(Graph *graph,unsigned *values, unsigned *sigma_values,unsigned nodes, unsigned* nodesigma, unsigned* nodedist,unsigned *sources,unsigned source_count,unsigned *psrc,unsigned *noutgoing,unsigned *edgedst,unsigned *border){
-unsigned ii,j;
+unsigned ii,j;#ifdef _OPENMP
+#pragma omp parallel default(shared)
+#endif
+{
+#ifdef _OPENMP
+#pragma omp sections 
+#endif
+{	
+	#ifdef _OPENMP
+	#pragma omp section
+	#endif
+	{
+		memset(graph.devicePartition[CPUPARTITION].edgesigma,0,((graph.devicePartition[CPUPARTITION].numEdges) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[CPUPARTITION].nodesigma,0,((graph.nnodes) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[CPUPARTITION].nodedelta,0,((graph.nnodes) * sizeof(float)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[CPUPARTITION].nodedist,MYINFINITY,((graph.nnodes) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[GPUPARTITION].edgesigma,0,((graph.devicePartition[GPUPARTITION].numEdges) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[GPUPARTITION].nodesigma,0,((graph.nnodes) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[GPUPARTITION].nodedelta,0,((graph.nnodes) * sizeof(float)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[GPUPARTITION].nodedist,MYINFINITY,((graph.nnodes) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+	 /* Initializing all border Vectors */
+	 for(borderIndex=0; borderIndex < borderCount_gpu; borderIndex++){
+   		borderVector_gpu1[borderIndex] = borderVector_gpu2[borderIndex] = MYINFINITY;
+		borderSigma_gpu[borderIndex] = 0;
+		}
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+	  for(borderIndex=0; borderIndex < borderCount_cpu; borderIndex++){
+		borderVector_cpu1[borderIndex] =  borderVector_cpu2[borderIndex] = MYINFINITY;
+		borderSigma_cpu[borderIndex] = 0;
+		}
+	}}  {
+	#ifdef _OPENMP
+      //  #pragma omp section
+        #endif
+        {
+               cudaStreamSynchronize(sone);
+	       cudaStreamSynchronize(stwo);
+     	       cudaStreamSynchronize(sthree);
+
+        }
+	}}
 
 /*
 	for (ii = 0; ii < nodes; ii++) {
@@ -183,7 +351,91 @@ for ( ii = 0; ii < source_count; ii++) {
 	for (j = num_edges_v; j < (num_edges_v + noutgoing[v]) ; j++) {
 		w = edgedst[j];
 			if(border[w]==0)continue;
-		nodedist[w]=MYINFINITY;
+		nodedist[w]=MYINFINITY;#ifdef _OPENMP
+#pragma omp parallel default(shared)
+#endif
+{
+#ifdef _OPENMP
+#pragma omp sections 
+#endif
+{	
+	#ifdef _OPENMP
+	#pragma omp section
+	#endif
+	{
+		memset(graph.devicePartition[CPUPARTITION].edgesigma,0,((graph.devicePartition[CPUPARTITION].numEdges) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[CPUPARTITION].nodesigma,0,((graph.nnodes) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[CPUPARTITION].nodedelta,0,((graph.nnodes) * sizeof(float)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[CPUPARTITION].nodedist,MYINFINITY,((graph.nnodes) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[GPUPARTITION].edgesigma,0,((graph.devicePartition[GPUPARTITION].numEdges) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[GPUPARTITION].nodesigma,0,((graph.nnodes) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[GPUPARTITION].nodedelta,0,((graph.nnodes) * sizeof(float)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[GPUPARTITION].nodedist,MYINFINITY,((graph.nnodes) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+	 /* Initializing all border Vectors */
+	 for(borderIndex=0; borderIndex < borderCount_gpu; borderIndex++){
+   		borderVector_gpu1[borderIndex] = borderVector_gpu2[borderIndex] = MYINFINITY;
+		borderSigma_gpu[borderIndex] = 0;
+		}
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+	  for(borderIndex=0; borderIndex < borderCount_cpu; borderIndex++){
+		borderVector_cpu1[borderIndex] =  borderVector_cpu2[borderIndex] = MYINFINITY;
+		borderSigma_cpu[borderIndex] = 0;
+		}
+	}}  {
+	#ifdef _OPENMP
+      //  #pragma omp section
+        #endif
+        {
+               cudaStreamSynchronize(sone);
+	       cudaStreamSynchronize(stwo);
+     	       cudaStreamSynchronize(sthree);
+
+        }
+	}}
 		nodesigma[w]=0;
 	}
 }
@@ -1154,28 +1406,97 @@ try{
 
 	/*Initializing data structures*/
 	//GPU data
-	cudaMemset(edgesigma,0,((graph.devicePartition[GPUPARTITION].numEdges) * sizeof(unsigned)));
-	cudaMemset(nodesigma,0,((graph.nnodes) * sizeof(unsigned)));
-	cudaMemset(nodedelta,0,((graph.nnodes) * sizeof(float)));
+	init_time = rtclock();
+	cudaMemsetAsync(edgesigma,0,((graph.devicePartition[GPUPARTITION].numEdges) * sizeof(unsigned)),sone);
+	cudaMemsetAsync(nodesigma,0,((graph.nnodes) * sizeof(unsigned)),stwo);
+	cudaMemsetAsync(nodedelta,0,((graph.nnodes) * sizeof(float)),sthree);
 	cudaMemset(nodedist,MYINFINITY,((graph.nnodes) * sizeof(unsigned)));
 	// CPU data
-	memset(graph.devicePartition[CPUPARTITION].edgesigma,0,((graph.devicePartition[CPUPARTITION].numEdges) * sizeof(unsigned)));
-	memset(graph.devicePartition[CPUPARTITION].nodesigma,0,((graph.nnodes) * sizeof(unsigned)));
-	memset(graph.devicePartition[CPUPARTITION].nodedelta,0,((graph.nnodes) * sizeof(float)));
-	memset(graph.devicePartition[CPUPARTITION].nodedist,MYINFINITY,((graph.nnodes) * sizeof(unsigned)));
-	memset(graph.devicePartition[GPUPARTITION].edgesigma,0,((graph.devicePartition[GPUPARTITION].numEdges) * sizeof(unsigned)));
-	memset(graph.devicePartition[GPUPARTITION].nodesigma,0,((graph.nnodes) * sizeof(unsigned)));
-	memset(graph.devicePartition[GPUPARTITION].nodedelta,0,((graph.nnodes) * sizeof(float)));
-	memset(graph.devicePartition[GPUPARTITION].nodedist,MYINFINITY,((graph.nnodes) * sizeof(unsigned)));
+#ifdef _OPENMP
+#pragma omp parallel default(shared)
+#endif
+{
+#ifdef _OPENMP
+#pragma omp sections 
+#endif
+{	
+	#ifdef _OPENMP
+	#pragma omp section
+	#endif
+	{
+		memset(graph.devicePartition[CPUPARTITION].edgesigma,0,((graph.devicePartition[CPUPARTITION].numEdges) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[CPUPARTITION].nodesigma,0,((graph.nnodes) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[CPUPARTITION].nodedelta,0,((graph.nnodes) * sizeof(float)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[CPUPARTITION].nodedist,MYINFINITY,((graph.nnodes) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[GPUPARTITION].edgesigma,0,((graph.devicePartition[GPUPARTITION].numEdges) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[GPUPARTITION].nodesigma,0,((graph.nnodes) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[GPUPARTITION].nodedelta,0,((graph.nnodes) * sizeof(float)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
+		memset(graph.devicePartition[GPUPARTITION].nodedist,MYINFINITY,((graph.nnodes) * sizeof(unsigned)));
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
 	 /* Initializing all border Vectors */
 	 for(borderIndex=0; borderIndex < borderCount_gpu; borderIndex++){
    		borderVector_gpu1[borderIndex] = borderVector_gpu2[borderIndex] = MYINFINITY;
 		borderSigma_gpu[borderIndex] = 0;
 		}
+        }
+        #ifdef _OPENMP
+        #pragma omp section
+        #endif
+        {
 	  for(borderIndex=0; borderIndex < borderCount_cpu; borderIndex++){
 		borderVector_cpu1[borderIndex] =  borderVector_cpu2[borderIndex] = MYINFINITY;
 		borderSigma_cpu[borderIndex] = 0;
 		}
+	}}  {
+	#ifdef _OPENMP
+      //  #pragma omp section
+        #endif
+        {
+               cudaStreamSynchronize(sone);
+	       cudaStreamSynchronize(stwo);
+     	       cudaStreamSynchronize(sthree);
+
+        }
+	}}
 
           srcpartition = graph.partition.part[source];
           nonsrcpartition = 1-srcpartition; // will work for 2 partitions;
