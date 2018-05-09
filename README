@@ -1,0 +1,17 @@
+### Implementing new backward phase ####
+
+-Implementing border node mapping to reduce border vector size (code files seems to have been deleted)
+
+-Implementing PartitionVertexMapping for Vertex ID mapping between partition and grap, to reduce the vertex vector sizes.
+
+-Adding the PartitionVertexMapping in graph28.h, in formDevicePartitions()
+	This will not a circular dependency on Struct Partition. But will pass the elements as param.
+	Each node vector will now be reduced to partition's num nodes size.
+	All accesses to the node vectors will have to be through PartitionVertexMapping.
+	For acceses where required a unidirectional mapping can be applied by passing PartitionVertexMapping's datastructures directly.
+
+- Adding the border mapping to existing code.
+	Implementation will only affect the code after partitioning !
+	Change devicePartitions to use the mapping
+	Change every code of borer request.
+

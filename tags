@@ -1,0 +1,652 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ASHUUTILS_H	./Structs.h	2;"	d
+AVGDEGREE	./bfs_worklistc.cu	5;"	d	file:
+AllocatedOnDevice	./Structs.h	/^	enum {NotAllocated, AllocatedOnHost, AllocatedOnDevice} memory;$/;"	e	enum:Graph::__anon1
+AllocatedOnDevice	./Structs.h	/^	enum {NotAllocated, AllocatedOnHost, AllocatedOnDevice} memory;$/;"	e	enum:Worklist_cpu::__anon2
+AllocatedOnHost	./Structs.h	/^	enum {NotAllocated, AllocatedOnHost, AllocatedOnDevice} memory;$/;"	e	enum:Graph::__anon1
+AllocatedOnHost	./Structs.h	/^	enum {NotAllocated, AllocatedOnHost, AllocatedOnDevice} memory;$/;"	e	enum:Worklist_cpu::__anon2
+ArrayToBorder	./backward_phase.cu	/^__device__ void ArrayToBorder(float *Delta, float *borderDelta,unsigned *borderNodes,unsigned borderCount){$/;"	f
+ArrayToBorder	./bc.cu	/^__global__ void ArrayToBorder(unsigned *Dist, unsigned *Sigma, unsigned *borderDist, unsigned *borderSigma,unsigned *borderNodes,unsigned borderCount){$/;"	f
+BFS_VARIANT	./bfs_worklistc.cu	1;"	d	file:
+BLKSIZE	./bfs_worklistc.cu	/^const int BLKSIZE = 256;$/;"	v
+BLOCKSIZE	./common.h	38;"	d
+BorderToArray	./backward_phase.cu	/^__device__ void BorderToArray(float *Delta, float *borderDelta,unsigned *borderNodes,unsigned borderCount){$/;"	f
+CACHELOG	./cpu_nodebased.cu	19;"	d	file:
+COMMON_H	./common.h	2;"	d
+CPUPARTITION	./Structs.h	18;"	d
+CUDACOPY	./Structs.h	12;"	d
+CUDACOPY	./Structs.h	14;"	d
+CUDA_SAFE_CALL	./cutil_subset.h	11;"	d
+CUDA_SAFE_CALL_NO_SYNC	./cutil_subset.h	3;"	d
+CUDA_SAFE_THREAD_SYNC	./cutil_subset.h	13;"	d
+ConvertSMVer2Cores	./common.h	/^inline int ConvertSMVer2Cores(int major, int minor)$/;"	f
+CudaTest	./common.h	/^static unsigned CudaTest(char *msg)$/;"	f
+DIAGNOSTIC	./cpu_nodebased.cu	16;"	d	file:
+DIAMETER	./bc.cu	40;"	d	file:
+DISTANCETHRESHOLD	./graph28.h	6;"	d
+DevicePartition	./Structs.h	/^	struct DevicePartition{$/;"	s	struct:Graph
+EMS_X86_64_H	./EMS_x86_64.h	10;"	d
+EXPECTED_GRAPH_DIAMETER	./cpu_nodebased.cu	17;"	d	file:
+Equals	./bc.cu	/^bool Equals (unsigned *V1, unsigned *V2, unsigned Bcount)$/;"	f
+GPUPARTITION	./Structs.h	19;"	d
+Graph	./Structs.h	/^struct Graph {$/;"	s
+Graph	./graph28.h	/^Graph::Graph(unsigned percgraph\/* = 100*\/) {$/;"	f	class:Graph
+IN_CORE	./bfs_worklistc.cu	/^const int IN_CORE = 1;     \/\/ set this to zero to disable global-barrier version$/;"	v
+KernelConfig	./Structs.h	/^typedef struct KernelConfig {$/;"	s
+KernelConfig	./Structs.h	/^} KernelConfig;$/;"	t	typeref:struct:KernelConfig
+KernelConfig	./kernelconfig.h	/^KernelConfig::KernelConfig(unsigned ldevice\/* = 0*\/) {$/;"	f	class:KernelConfig
+LSG_GRAPH	./graph28.h	2;"	d
+LSG_KERNELCONFIG	./kernelconfig.h	2;"	d
+LSG_LIST	./list.h	2;"	d
+LSG_SCHEDULER	./scheduler19.h	2;"	d
+List	./list.h	/^__device__ List::List(unsigned size) {$/;"	f	class:List
+List	./list.h	/^typedef struct List {$/;"	s
+List	./list.h	/^} List;$/;"	t	typeref:struct:List
+MAX	./graph28.h	923;"	d
+MAXBLOCKSIZE	./common.h	39;"	d
+MAXNBLOCKS	./common.h	37;"	d
+MAXOVERFLOWS	./worklist7.h	15;"	d
+MAXOVERFLOWS	./worklist_cpu.h	16;"	d
+MAXSHARED	./common.h	40;"	d
+MAXSHAREDUINT	./common.h	41;"	d
+MINCAPACITY	./worklist7.h	14;"	d
+MINCAPACITY	./worklist_cpu.h	15;"	d
+MYINFINITY	./Structs.h	5;"	d
+MemMul_CellNet	./patoh.h	/^int		MemMul_CellNet,$/;"	m	struct:__anon3
+MemMul_General	./patoh.h	/^                MemMul_General;$/;"	m	struct:__anon3
+MemMul_Pins	./patoh.h	/^		MemMul_Pins,$/;"	m	struct:__anon3
+NOSHARE	./cpu_nodebased.cu	20;"	d	file:
+NVERTICES	./bfs_worklistc.cu	/^unsigned int NVERTICES;$/;"	v
+NotAllocated	./Structs.h	/^	enum {NotAllocated, AllocatedOnHost, AllocatedOnDevice} memory;$/;"	e	enum:Graph::__anon1
+NotAllocated	./Structs.h	/^	enum {NotAllocated, AllocatedOnHost, AllocatedOnDevice} memory;$/;"	e	enum:Worklist_cpu::__anon2
+PATOH_BALANCE_ADAPTIVE	./patoh.h	39;"	d
+PATOH_BALANCE_RELAXED	./patoh.h	40;"	d
+PATOH_BALANCE_STRICT	./patoh.h	38;"	d
+PATOH_CONPART	./patoh.h	28;"	d
+PATOH_CRS_ABS	./patoh.h	60;"	d
+PATOH_CRS_ABSHCC	./patoh.h	66;"	d
+PATOH_CRS_ABSHPC	./patoh.h	67;"	d
+PATOH_CRS_AVGDIS	./patoh.h	58;"	d
+PATOH_CRS_CANBERA	./patoh.h	59;"	d
+PATOH_CRS_CONC	./patoh.h	68;"	d
+PATOH_CRS_FIRST_NET_MATCH	./patoh.h	71;"	d
+PATOH_CRS_GCC	./patoh.h	69;"	d
+PATOH_CRS_GCM	./patoh.h	61;"	d
+PATOH_CRS_HCC	./patoh.h	64;"	d
+PATOH_CRS_HCM	./patoh.h	55;"	d
+PATOH_CRS_HPC	./patoh.h	65;"	d
+PATOH_CRS_MANDIS	./patoh.h	57;"	d
+PATOH_CRS_MNC	./patoh.h	74;"	d
+PATOH_CRS_NC	./patoh.h	73;"	d
+PATOH_CRS_PHCM	./patoh.h	56;"	d
+PATOH_CRS_SHCC	./patoh.h	70;"	d
+PATOH_CRS_SHCM	./patoh.h	62;"	d
+PATOH_CUTPART	./patoh.h	30;"	d
+PATOH_IPA_AGGMATCH	./patoh.h	81;"	d
+PATOH_IPA_ALL	./patoh.h	92;"	d
+PATOH_IPA_BF	./patoh.h	82;"	d
+PATOH_IPA_BINPACK	./patoh.h	83;"	d
+PATOH_IPA_COMP_GHGP	./patoh.h	90;"	d
+PATOH_IPA_GHGP	./patoh.h	80;"	d
+PATOH_IPA_GHG_MAXNET	./patoh.h	88;"	d
+PATOH_IPA_GHG_MAXPIN	./patoh.h	87;"	d
+PATOH_IPA_GHG_MAXPOSGAIN	./patoh.h	89;"	d
+PATOH_IPA_GREEDY_COMP_GHGP	./patoh.h	91;"	d
+PATOH_IPA_RANDOM1	./patoh.h	84;"	d
+PATOH_IPA_RANDOM2	./patoh.h	85;"	d
+PATOH_IPA_RANDOM3	./patoh.h	86;"	d
+PATOH_OD_HIGH	./patoh.h	115;"	d
+PATOH_OD_LOW	./patoh.h	113;"	d
+PATOH_OD_MEDIUM	./patoh.h	114;"	d
+PATOH_OD_NONE	./patoh.h	112;"	d
+PATOH_OD_ONLYRESTIME	./patoh.h	111;"	d
+PATOH_REFALG_BFMKL	./patoh.h	106;"	d
+PATOH_REFALG_BKL	./patoh.h	102;"	d
+PATOH_REFALG_D_BFM	./patoh.h	100;"	d
+PATOH_REFALG_D_FM	./patoh.h	101;"	d
+PATOH_REFALG_FMKL	./patoh.h	107;"	d
+PATOH_REFALG_KL	./patoh.h	103;"	d
+PATOH_REFALG_MLG_BFM	./patoh.h	104;"	d
+PATOH_REFALG_MLG_FM	./patoh.h	105;"	d
+PATOH_REFALG_NONE	./patoh.h	97;"	d
+PATOH_REFALG_T_BFM	./patoh.h	98;"	d
+PATOH_REFALG_T_FM	./patoh.h	99;"	d
+PATOH_SUGPARAM_DEFAULT	./patoh.h	33;"	d
+PATOH_SUGPARAM_QUALITY	./patoh.h	35;"	d
+PATOH_SUGPARAM_SPEED	./patoh.h	34;"	d
+PATOH_VO_CONT	./patoh.h	44;"	d
+PATOH_VO_RAND	./patoh.h	45;"	d
+PATOH_VO_SCD	./patoh.h	46;"	d
+PATOH_VO_SMAXNS	./patoh.h	47;"	d
+PATOH_VO_SMINNS	./patoh.h	48;"	d
+PATOH_VO_SMINNSSUM	./patoh.h	49;"	d
+PATOH_VO_SWEEP	./patoh.h	50;"	d
+PPaToH_Parameters	./patoh.h	/^typedef PaToH_Parameters             *PPaToH_Parameters;$/;"	t
+PaToH_Parameters	./patoh.h	/^} PaToH_Parameters;$/;"	t	typeref:struct:__anon3
+Partition	./Structs.h	/^	struct Partition{$/;"	s	struct:Graph
+SHAREDPERTHREAD	./common.h	42;"	d
+SWAP	./bfs_ddV3.cu	66;"	d	file:
+SWAP	./cpu_ddV3.cu	5;"	d	file:
+SWAPDEV	./worklist7.h	307;"	d
+SWAPDEV	./worklist_cpu.h	330;"	d
+Scheduler	./scheduler19.h	/^Scheduler::Scheduler() {$/;"	f	class:Scheduler
+Scheduler	./scheduler19.h	/^struct Scheduler {$/;"	s
+SingleArgumentCallBack	./patoh.h	/^typedef int (*SingleArgumentCallBack)(PPaToH_Parameters pargs, char *variable, char *value, int ivalue, float fvalue);$/;"	t
+TAKEN	./EMS_x86_64.h	12;"	d
+THRESHOLDDEGREE	./graph28.h	7;"	d
+VERIFY	./bfs_ddV3.cu	63;"	d	file:
+WORKPERTHREAD	./bfs_worklistc.cu	6;"	d	file:
+Worklist	./worklist7.h	/^Worklist::Worklist() {$/;"	f	class:Worklist
+Worklist	./worklistc.h	/^  Worklist (){$/;"	f	struct:Worklist
+Worklist	./worklistc.h	/^  Worklist(size_t nsize)$/;"	f	struct:Worklist
+Worklist	./worklistc.h	/^struct Worklist {$/;"	s
+Worklist_cpu	./Structs.h	/^struct Worklist_cpu {$/;"	s
+Worklist_cpu	./worklist_cpu.h	/^Worklist_cpu::Worklist_cpu() {$/;"	f	class:Worklist_cpu
+_GLIBCXX_ATOMIC_BUILTINS	./gcc_cuda_compat.h	1;"	d
+_GLIBCXX_USE_INT128	./gcc_cuda_compat.h	2;"	d
+_MYUTILS_H	./myutils.h	2;"	d
+_PATOH_V3_LIB_H_	./patoh.h	18;"	d
+_UTILS_H	./utils.h	2;"	d
+_k	./patoh.h	/^int		_k;$/;"	m	struct:__anon3
+active	./Structs.h	/^        bool* active, *localchanged;$/;"	m	struct:varto_gpu_part
+actual_dist	./Structs.h	/^	unsigned *actual_dist;$/;"	m	struct:varto_cpu_part
+addBC	./graph28.h	/^__device__ dorf Graph::addBC(dorf *bc, unsigned nn, dorf val) {$/;"	f	class:Graph
+addDelta	./graph28.h	/^__device__ dorf Graph::addDelta(dorf *delta, unsigned nn, dorf val) {$/;"	f	class:Graph
+addSigma	./graph28.h	/^__device__ unsigned Graph::addSigma(unsigned ee, unsigned *dstsigma, unsigned srcsigma) {$/;"	f	class:Graph
+allargs	./patoh.h	/^char		allargs[8192];$/;"	m	struct:__anon3
+alloc	./worklist7.h	/^unsigned *Worklist::alloc(unsigned allocsize) {$/;"	f	class:Worklist
+alloc	./worklist_cpu.h	/^unsigned *Worklist_cpu::alloc(unsigned allocsize) {$/;"	f	class:Worklist_cpu
+allocLevels	./graph28.h	/^void Graph::allocLevels() {$/;"	f	class:Graph
+allocOnDevice	./graph28.h	/^unsigned Graph::allocOnDevice() {$/;"	f	class:Graph
+allocOnHost	./graph28.h	/^unsigned Graph::allocOnHost() {$/;"	f	class:Graph
+ananya_code_func	./bfs_ddV3.cu	/^void ananya_code_func(unsigned *psrc,unsigned *noutgoing,unsigned *d_psrc,unsigned *d_noutgoing,unsigned *d_edgessrc,unsigned *d_edgesdst,unsigned hnodes,unsigned hedges,unsigned *hdist,unsigned *nodesigma,unsigned *edgesigma,unsigned source_count,unsigned *sources,cudaDeviceProp *dp,bool BM_COMP,unsigned *nerr){$/;"	f
+appendHost	./worklist7.h	/^unsigned Worklist::appendHost(Worklist *otherlist) {$/;"	f	class:Worklist
+appendHost	./worklist_cpu.h	/^unsigned Worklist_cpu::appendHost(Worklist_cpu *otherlist) {$/;"	f	class:Worklist_cpu
+appendWorklist	./worklist7.h	/^__global__ void appendWorklist(Worklist dst, Worklist src, unsigned dstsize) {$/;"	f
+appendWorklist	./worklist_cpu.h	/^void appendWorklist(Worklist_cpu dst, Worklist_cpu src, unsigned dstsize) {$/;"	f
+array	./list.h	/^	unsigned *array;$/;"	m	struct:List
+assignEnabled	./scheduler19.h	/^void Scheduler::assignEnabled(unsigned task, bool state) {$/;"	f	class:Scheduler
+assignEnabledAll	./scheduler19.h	/^void Scheduler::assignEnabledAll(bool state) {$/;"	f	class:Scheduler
+balance	./patoh.h	/^int             balance;$/;"	m	struct:__anon3
+betweenness_centrality_parallel	./cpu_nodebased.cu	/^int betweenness_centrality_parallel(unsigned hnodes,unsigned hedges,unsigned *rowptrs,unsigned *columnindexes, unsigned *edgessrc,unsigned *noutgoing,unsigned *sources,unsigned source_count,unsigned *nodedist, unsigned *nodesigma, unsigned *edgesigma,omp_lock_t *lock,int num_threads) {$/;"	f
+bigVcycle	./patoh.h	/^int		bigVcycle,$/;"	m	struct:__anon3
+bisec_fixednetsizetrsh	./patoh.h	/^int		bisec_fixednetsizetrsh;$/;"	m	struct:__anon3
+bisec_netsizetrsh	./patoh.h	/^float		bisec_netsizetrsh;$/;"	m	struct:__anon3
+bisec_partmultnetsizetrsh	./patoh.h	/^int             bisec_partmultnetsizetrsh;$/;"	m	struct:__anon3
+bits	./bc.cu	/^	vector<bool> bits;$/;"	m	struct:matrix_csr	file:
+blocksize	./Structs.h	/^	unsigned nblocks, blocksize;$/;"	m	struct:KernelConfig
+border	./Structs.h	/^	  unsigned int* border;$/;"	m	struct:Graph::Partition
+border	./Structs.h	/^	unsigned *nodesigma, *edgesigma, *edgesrc, *edgedst, *nodedist, *edgedstdist, *edgewt,*border;$/;"	m	struct:varto_gpu_part
+borderCount	./Structs.h	/^          unsigned int* borderCount;$/;"	m	struct:Graph::Partition
+borderDelta	./Structs.h	/^	float *borderDelta;$/;"	m	struct:varto_gpu_part
+borderDist	./Structs.h	/^	unsigned *borderNodes,*borderDist, *borderSigma;$/;"	m	struct:varto_gpu_part
+borderInfo	./Structs.h	/^	Graph::Partition *borderInfo;$/;"	m	struct:varto_cpu_part
+borderInfo	./Structs.h	/^	Graph::Partition *borderInfo;$/;"	m	struct:varto_gpu_part
+borderMatrix	./Structs.h	/^        struct matrix_csr *borderMatrix;$/;"	m	struct:varto_gpu_part	typeref:struct:varto_gpu_part::matrix_csr
+borderMatrixVector_comp	./bc.cu	/^void borderMatrixVector_comp (struct matrix_csr *M, unsigned *Vin,unsigned *Vout,unsigned *S_V,unsigned Bcount)$/;"	f
+borderMatrix_cpu	./Structs.h	/^	struct matrix_csr *borderMatrix_cpu, *borderMatrix_gpu;$/;"	m	struct:varto_cpu_part	typeref:struct:varto_cpu_part::matrix_csr
+borderMatrix_gpu	./Structs.h	/^	struct matrix_csr *borderMatrix_cpu, *borderMatrix_gpu;$/;"	m	struct:varto_cpu_part	typeref:struct:varto_cpu_part::
+borderNodes	./Structs.h	/^	unsigned *borderNodes,*borderDist, *borderSigma;$/;"	m	struct:varto_gpu_part
+borderNodes	./Structs.h	/^          unsigned int** borderNodes;$/;"	m	struct:Graph::Partition
+borderSigma	./Structs.h	/^	unsigned *borderNodes,*borderDist, *borderSigma;$/;"	m	struct:varto_gpu_part
+borderSigma_cpu	./Structs.h	/^	unsigned int *borderSigma_cpu,*borderSigma_gpu;$/;"	m	struct:varto_cpu_part
+borderSigma_cpu	./Structs.h	/^	unsigned int *borderSigma_cpu,*borderSigma_gpu;$/;"	m	struct:varto_gpu_part
+borderSigma_gpu	./Structs.h	/^	unsigned int *borderSigma_cpu,*borderSigma_gpu;$/;"	m	struct:varto_cpu_part
+borderSigma_gpu	./Structs.h	/^	unsigned int *borderSigma_cpu,*borderSigma_gpu;$/;"	m	struct:varto_gpu_part
+borderVector_cpu	./Structs.h	/^	unsigned int *borderVector_cpu,*borderVector_gpu;$/;"	m	struct:varto_cpu_part
+borderVector_cpu	./Structs.h	/^	unsigned int *borderVector_cpu,*borderVector_gpu;$/;"	m	struct:varto_gpu_part
+borderVector_gpu	./Structs.h	/^	unsigned int *borderVector_cpu,*borderVector_gpu;$/;"	m	struct:varto_cpu_part
+borderVector_gpu	./Structs.h	/^	unsigned int *borderVector_cpu,*borderVector_gpu;$/;"	m	struct:varto_gpu_part
+calculate	./kernelconfig.h	/^unsigned KernelConfig::calculate() {$/;"	f	class:KernelConfig
+calculateSize	./worklist7.h	/^unsigned Worklist::calculateSize(unsigned hstart, unsigned hend) {$/;"	f	class:Worklist
+calculateSize	./worklist_cpu.h	/^unsigned Worklist_cpu::calculateSize(unsigned hstart, unsigned hend) {$/;"	f	class:Worklist_cpu
+capacity	./Structs.h	/^	unsigned *start, *end, *capacity;	\/\/ since these change, we don't want their copies with threads, hence pointers.$/;"	m	struct:Worklist_cpu
+capacity	./list.h	/^	unsigned capacity;$/;"	m	struct:List
+clear	./list.h	/^__device__ void List::clear() {$/;"	f	class:List
+clear	./worklist7.h	/^__device__ void Worklist::clear() {	\/\/ should be invoked by a single thread.$/;"	f	class:Worklist
+clear	./worklist_cpu.h	/^void Worklist_cpu::clear() {	\/\/ should be invoked by a single thread.$/;"	f	class:Worklist_cpu
+clearHost	./worklist7.h	/^void Worklist::clearHost() {$/;"	f	class:Worklist
+clearHost	./worklist_cpu.h	/^void Worklist_cpu::clearHost() {$/;"	f	class:Worklist_cpu
+compress	./worklist7.h	/^__global__ void compress(Worklist wl, unsigned wlsize, unsigned sentinel) {$/;"	f
+compressHost	./worklist7.h	/^void Worklist::compressHost(unsigned wlsize, unsigned sentinel) {$/;"	f	class:Worklist
+computeDiameter	./graph28.h	/^__device__  void Graph::computeDiameter() {$/;"	f	class:Graph
+computeInOut	./graph28.h	/^__device__ void Graph::computeInOut() {$/;"	f	class:Graph
+computeLevels	./graph28.h	/^__device__ bool Graph::computeLevels() {$/;"	f	class:Graph
+computeStats	./graph28.h	/^__device__ void Graph::computeStats() {$/;"	f	class:Graph
+copyOldToNew	./worklist7.h	/^void Worklist::copyOldToNew(unsigned *olditems, unsigned *newitems, unsigned oldsize, unsigned oldcapacity) {$/;"	f	class:Worklist
+copyOldToNew	./worklist_cpu.h	/^void Worklist_cpu::copyOldToNew(unsigned *olditems, unsigned *newitems, unsigned oldsize, unsigned oldcapacity) {$/;"	f	class:Worklist_cpu
+count	./worklist7.h	/^__device__ unsigned Worklist::count() {$/;"	f	class:Worklist
+count	./worklist_cpu.h	/^unsigned Worklist_cpu::count() {$/;"	f	class:Worklist_cpu
+coversProblem	./kernelconfig.h	/^bool KernelConfig::coversProblem(unsigned size\/* = 0*\/) {$/;"	f	class:KernelConfig
+cpu_BFS	./bc.cu	/^void *cpu_BFS(void *P){$/;"	f
+cpu_BFS	./partition_metis.cu	/^void *cpu_BFS(void *P){$/;"	f
+cpu_BorderMatrix_comp	./bc.cu	/^void *cpu_BorderMatrix_comp(void *P){$/;"	f
+cpu_F_I	./Structs.h	/^	double cpu_F_I,cpu_F_R,cpu_bck_knl_time,cpu_fwd_knl_time,cpu_tot_bck_time;$/;"	m	struct:varto_cpu_part
+cpu_F_R	./Structs.h	/^	double cpu_F_I,cpu_F_R,cpu_bck_knl_time,cpu_fwd_knl_time,cpu_tot_bck_time;$/;"	m	struct:varto_cpu_part
+cpu_Relax	./bc.cu	/^void *cpu_Relax(void *P){$/;"	f
+cpu_SingleRelax	./bc.cu	/^void cpu_SingleRelax(void *P){$/;"	f
+cpu_backward	./backward_phase.cu	/^void cpu_backward(struct varto_cpu_part *var)$/;"	f
+cpu_bck_knl_time	./Structs.h	/^	double cpu_F_I,cpu_F_R,cpu_bck_knl_time,cpu_fwd_knl_time,cpu_tot_bck_time;$/;"	m	struct:varto_cpu_part
+cpu_bfs_relax	./bc.cu	/^void cpu_bfs_relax(unsigned nnodes, unsigned nedges, unsigned *psrc,unsigned *noutgoing,unsigned* edgesrc, unsigned* edgedst, unsigned* edgewt, unsigned *nodesigma, foru *nodedist,unsigned *edgesigma,int nthreads,unsigned *borderNodes, unsigned bcount,omp_lock_t *lock,unsigned *border) {$/;"	f
+cpu_component	./backward_phase.cu	/^void cpu_component (unsigned *edgesrc,unsigned *edgedst,unsigned nnodes,unsigned nedges,unsigned *nodedist,unsigned *nodesigma,unsigned *edgesigma, float *nodedelta,bool *wait,int nthreads,unsigned *border,long level,unsigned *psrc, unsigned *noutgoing){$/;"	f
+cpu_component	./bc.cu	/^void cpu_component (unsigned *psrc,unsigned *noutgoing,unsigned *edgesdstsrc,unsigned *edgessrcdst,unsigned hnodes,unsigned hedges,unsigned *hdist,unsigned *nodesigma,unsigned *edgesigma,unsigned source_count,unsigned *sources,omp_lock_t *lock,bool BM_COMP, int num_threads)$/;"	f
+cpu_component	./partition_metis.cu	/^void cpu_component (unsigned *psrc,unsigned *noutgoing,unsigned *edgesdstsrc,unsigned *edgessrcdst,unsigned hnodes,unsigned hedges,unsigned *hdist,unsigned *nodesigma,unsigned *edgesigma,unsigned source_count,unsigned *sources,omp_lock_t *lock,bool BM_COMP, int num_threads)$/;"	f
+cpu_ddV3	./cpu_ddV3.cu	/^void cpu_ddV3(unsigned *dist,unsigned *nodesigma,unsigned *edgesigma,bool BM_COMP,unsigned *edgessrc,unsigned *edgesdst, unsigned *psrc,unsigned *noutgoing,Worklist_cpu &inwl, Worklist_cpu &outwl,unsigned *gerrno,omp_lock_t * lock)\/\/,unsigned *dmaxdeg)\/\/Add round Robin$/;"	f
+cpu_fwd_knl_time	./Structs.h	/^	double cpu_F_I,cpu_F_R,cpu_bck_knl_time,cpu_fwd_knl_time,cpu_tot_bck_time;$/;"	m	struct:varto_cpu_part
+cpu_level	./Structs.h	/^	long *cpu_level;$/;"	m	struct:varto_cpu_part
+cpu_level	./Structs.h	/^	volatile long *cpu_level;$/;"	m	struct:varto_gpu_part
+cpu_level_min	./Structs.h	/^	long *cpu_level_min, *gpu_level_min;$/;"	m	struct:varto_cpu_part
+cpu_level_min	./Structs.h	/^	long *cpu_level_min, *gpu_level_min;$/;"	m	struct:varto_gpu_part
+cpu_nerr	./cpu_ddV3.cu	/^unsigned cpu_nerr;$/;"	v
+cpu_ratiotime	./bc.cu	/^double cpu_ratiotime,gpu_ratiotime;$/;"	v
+cpu_ratiotime	./partition_metis.cu	/^double cpu_ratiotime,gpu_ratiotime;$/;"	v
+cpu_single_component	./backward_phase.cu	/^void cpu_single_component (unsigned *edgesrc,unsigned *edgedst,unsigned nnodes,unsigned nedges,unsigned *nodedist,unsigned *nodesigma,unsigned *edgesigma, float *nodedelta,int nthreads,long level,unsigned *psrc, unsigned *noutgoing){$/;"	f
+cpu_tot_bck_time	./Structs.h	/^	double cpu_F_I,cpu_F_R,cpu_bck_knl_time,cpu_fwd_knl_time,cpu_tot_bck_time;$/;"	m	struct:varto_cpu_part
+crs_VisitOrder	./patoh.h	/^int		crs_VisitOrder;      \/* PATOH_VO_... *\/$/;"	m	struct:__anon3
+crs_alg	./patoh.h	/^int		crs_alg;             \/* PATOH_CRS_... *\/$/;"	m	struct:__anon3
+crs_coarsenper	./patoh.h	/^		crs_coarsenper;$/;"	m	struct:__anon3
+crs_coarsento	./patoh.h	/^int		crs_coarsento,$/;"	m	struct:__anon3
+crs_coarsentokmult	./patoh.h	/^                crs_coarsentokmult,$/;"	m	struct:__anon3
+crs_iden_netsizetrh	./patoh.h	/^int		crs_iden_netsizetrh;$/;"	m	struct:__anon3
+crs_idenafter	./patoh.h	/^int		crs_idenafter;    $/;"	m	struct:__anon3
+crs_maxallowedcellwmult	./patoh.h	/^float           crs_maxallowedcellwmult;$/;"	m	struct:__anon3
+crs_useafter	./patoh.h	/^int             crs_useafter, crs_useafteralg;$/;"	m	struct:__anon3
+crs_useafteralg	./patoh.h	/^int             crs_useafter, crs_useafteralg;$/;"	m	struct:__anon3
+cuArray	./Structs.h	/^	cudaArray *cuArray;$/;"	m	struct:Graph
+currenttask	./scheduler19.h	/^	unsigned currenttask, previousupdated;$/;"	m	struct:Scheduler
+cuttype	./patoh.h	/^int		cuttype;$/;"	m	struct:__anon3
+d_gpu_wait	./Structs.h	/^	bool *d_gpu_wait;$/;"	m	struct:varto_gpu_part
+d_s	./bc.cu	/^struct d_s{$/;"	s	file:
+data	./scheduler19.h	/^	unsigned *data, *order;$/;"	m	struct:Scheduler
+dcomputelevels	./graph28.h	/^__global__ void dcomputelevels(Graph graph, bool *changed) {$/;"	f
+dealloc	./graph28.h	/^unsigned Graph::dealloc() {$/;"	f	class:Graph
+dealloc	./worklist7.h	/^unsigned Worklist::dealloc() {$/;"	f	class:Worklist
+dealloc	./worklist_cpu.h	/^unsigned Worklist_cpu::dealloc() {$/;"	f	class:Worklist_cpu
+deallocOnDevice	./graph28.h	/^unsigned Graph::deallocOnDevice() {$/;"	f	class:Graph
+deallocOnHost	./graph28.h	/^unsigned Graph::deallocOnHost() {$/;"	f	class:Graph
+dealloc_part	./graph28.h	/^unsigned Graph::dealloc_part() {$/;"	f	class:Graph
+device	./Structs.h	/^	unsigned device;$/;"	m	struct:KernelConfig
+devicePartition	./Structs.h	/^	}* devicePartition;$/;"	m	struct:Graph	typeref:struct:Graph::DevicePartition
+diameter	./Structs.h	/^	unsigned diameter;$/;"	m	struct:Graph
+dindex	./worklistc.h	/^  int *dindex;$/;"	m	struct:Worklist
+dinitlevels	./graph28.h	/^__global__ void dinitlevels(Graph graph) {$/;"	f
+disable	./scheduler19.h	/^void Scheduler::disable(unsigned task) {$/;"	f	class:Scheduler
+disableAll	./scheduler19.h	/^void Scheduler::disableAll() {$/;"	f	class:Scheduler
+display_items	./worklistc.h	/^  void display_items()$/;"	f	struct:Worklist
+dist	./bc.cu	/^	unsigned dist;$/;"	m	struct:d_s	file:
+dist	./bc.cu	/^	vector<short> dist;$/;"	m	struct:matrix_csr	file:
+dist	./bc.cu	/^	vector<unsigned> dist;$/;"	m	struct:matrix_csr	file:
+dnsize	./worklistc.h	/^  int length, *dnsize;$/;"	m	struct:Worklist
+doinitperm	./patoh.h	/^int		doinitperm;$/;"	m	struct:__anon3
+dontReorderOnUpdate	./scheduler19.h	/^void Scheduler::dontReorderOnUpdate() {$/;"	f	class:Scheduler
+dorf	./common.h	/^typedef float   dorf;$/;"	t
+dp	./Structs.h	/^	cudaDeviceProp dp;$/;"	m	struct:KernelConfig
+dprint1x1	./graph28.h	/^__global__ void dprint1x1(Graph graph) {$/;"	f
+dprintResident	./graph28.h	/^__global__ void dprintResident(Graph graph, unsigned it, unsigned nprintnodes) {$/;"	f
+dprintstats	./graph28.h	/^__global__ void dprintstats(Graph graph) {$/;"	f
+drelax	./bfs_worklistc.cu	/^void drelax(foru *dist, unsigned hnodes, unsigned *nodesigma,unsigned *edgesigma,unsigned *srcsrc, unsigned *edgesdst,unsigned *noutgoing,unsigned *gerrno, Worklist &inwl, Worklist& outwl, int iteration) {$/;"	f
+drelax2	./bfs_worklistc.cu	/^__global__ void drelax2(foru *dist, unsigned hnodes,unsigned *d_sources,unsigned source_count,unsigned *nodesigma,unsigned *edgesigma,unsigned *srcsrc, unsigned *edgesdst,unsigned *noutgoing,unsigned *gerrno, Worklist inwl, Worklist outwl, int iteration, GlobalBarrier gb)$/;"	f
+drelax3	./bfs_worklistc.cu	/^__global__ void drelax3(foru *dist, unsigned hnodes,unsigned *d_sources,unsigned source_count,unsigned *nodesigma,unsigned *edgesigma,unsigned *srcsrc, unsigned *edgesdst,unsigned *noutgoing,unsigned *gerrno, Worklist inwl, Worklist outwl, int iteration)$/;"	f
+dwl	./worklistc.h	/^  int *dwl, *wl;$/;"	m	struct:Worklist
+edgeCount	./Structs.h	/^	  unsigned int* edgeCount;$/;"	m	struct:Graph::Partition
+edgecut	./Structs.h	/^	  int edgecut; \/\/ since the edge cut is supposed to be small$/;"	m	struct:Graph::Partition
+edgedst	./Structs.h	/^	  unsigned *edgedst;$/;"	m	struct:Graph::DevicePartition
+edgedst	./Structs.h	/^	unsigned *nodesigma, *edgesigma, *edgesrc, *edgedst, *nodedist, *edgedstdist, *edgewt,*border;$/;"	m	struct:varto_gpu_part
+edgedstdist	./Structs.h	/^	unsigned *nodesigma, *edgesigma, *edgesrc, *edgedst, *nodedist, *edgedstdist, *edgewt,*border;$/;"	m	struct:varto_gpu_part
+edgedstsrc	./Structs.h	/^	unsigned *noutgoing, *srcsrc, *edgessrcdst,*edgedstsrc,*nincoming;$/;"	m	struct:Graph
+edgesigma	./Structs.h	/^	unsigned *nodesigma, *edgesigma, *edgesrc, *edgedst, *nodedist, *edgedstdist, *edgewt,*border;$/;"	m	struct:varto_gpu_part
+edgesigma	./Structs.h	/^          unsigned * edgesigma;$/;"	m	struct:Graph::DevicePartition
+edgesrc	./Structs.h	/^	  unsigned *edgesrc;$/;"	m	struct:Graph::DevicePartition
+edgesrc	./Structs.h	/^	unsigned *nodesigma, *edgesigma, *edgesrc, *edgedst, *nodedist, *edgedstdist, *edgewt,*border;$/;"	m	struct:varto_gpu_part
+edgessrcdst	./Structs.h	/^	unsigned *noutgoing, *srcsrc, *edgessrcdst,*edgedstsrc,*nincoming;$/;"	m	struct:Graph
+edgessrcwt	./Structs.h	/^	foru *edgessrcwt;$/;"	m	struct:Graph
+edgewt	./Structs.h	/^	  unsigned *edgewt;$/;"	m	struct:Graph::DevicePartition
+edgewt	./Structs.h	/^	unsigned *nodesigma, *edgesigma, *edgesrc, *edgedst, *nodedist, *edgedstdist, *edgewt,*border;$/;"	m	struct:varto_gpu_part
+eid_t	./cpu_nodebased.cu	/^typedef unsigned eid_t;$/;"	t	file:
+empty_val_I4	./EMS_x86_64.h	/^static const  int32_t empty_val_I4  = (int32_t)0x8000000UL;$/;"	v
+empty_val_I8	./EMS_x86_64.h	/^static const  int64_t empty_val_I8 = (int64_t)0x8000000000000000ULL;$/;"	v
+empty_val_UI4	./EMS_x86_64.h	/^static const uint32_t empty_val_UI4 = (uint32_t)0xFFFFFFFFUL;$/;"	v
+enable	./scheduler19.h	/^void Scheduler::enable(unsigned task) {$/;"	f	class:Scheduler
+enableAll	./scheduler19.h	/^void Scheduler::enableAll() {$/;"	f	class:Scheduler
+enabled	./scheduler19.h	/^	bool *enabled; $/;"	m	struct:Scheduler
+enabledinuse	./scheduler19.h	/^	unsigned *enabledinuse;$/;"	m	struct:Scheduler
+end	./Structs.h	/^	unsigned *start, *end, *capacity;	\/\/ since these change, we don't want their copies with threads, hence pointers.$/;"	m	struct:Worklist_cpu
+ensureSpace	./worklist7.h	/^unsigned Worklist::ensureSpace(unsigned space) {$/;"	f	class:Worklist
+ensureSpace	./worklist_cpu.h	/^unsigned Worklist_cpu::ensureSpace(unsigned space) {$/;"	f	class:Worklist_cpu
+fast_initbal_mult	./patoh.h	/^		fast_initbal_mult;$/;"	m	struct:__anon3
+fillBorderAndCount	./graph28.h	/^int Graph::fillBorderAndCount(Graph &from, Partition *  partition){$/;"	f	class:Graph
+final_imbal	./patoh.h	/^		final_imbal,$/;"	m	struct:__anon3
+final_sol_discard_mult	./patoh.h	/^		final_sol_discard_mult;$/;"	m	struct:__anon3
+findEnabled	./scheduler19.h	/^unsigned Scheduler::findEnabled() {$/;"	f	class:Scheduler
+findMaxLevel	./graph28.h	/^__device__ unsigned Graph::findMaxLevel() {$/;"	f	class:Graph
+findSerialBFS	./graph28.h	/^void Graph::findSerialBFS(unsigned src) {$/;"	f	class:Graph
+find_matrix	./bc.cu	/^struct d_s find_matrix(struct matrix_csr *M,unsigned i, unsigned j){$/;"	f
+formDevicePartitions	./graph28.h	/^void Graph::formDevicePartitions(Graph &from){$/;"	f	class:Graph
+formMetisPartitions	./graph28.h	/^int Graph::formMetisPartitions(Graph &from, Partition* partition){$/;"	f	class:Graph
+foru	./common.h	/^typedef unsigned foru;$/;"	t
+foundStats	./Structs.h	/^	bool foundStats;$/;"	m	struct:Graph
+freeLevels	./graph28.h	/^void Graph::freeLevels() {$/;"	f	class:Graph
+freeSize	./worklist7.h	/^unsigned Worklist::freeSize() {$/;"	f	class:Worklist
+freeSize	./worklist_cpu.h	/^unsigned Worklist_cpu::freeSize() {$/;"	f	class:Worklist_cpu
+getCapacity	./worklist7.h	/^unsigned Worklist::getCapacity() {$/;"	f	class:Worklist
+getCapacity	./worklist_cpu.h	/^unsigned Worklist_cpu::getCapacity() {$/;"	f	class:Worklist_cpu
+getDestination	./graph28.h	/^__device__ unsigned Graph::getDestination(unsigned src, unsigned nthedge) {$/;"	f	class:Graph
+getDestinationDelta	./graph28.h	/^__device__ dorf Graph::getDestinationDelta(dorf *dstdelta, unsigned edge) {$/;"	f	class:Graph
+getDestinationDistance	./graph28.h	/^__device__ foru Graph::getDestinationDistance(foru *dstdist, unsigned edge) {$/;"	f	class:Graph
+getDestinationDistance	./graph28.h	/^__device__ foru Graph::getDestinationDistance(foru *dstdist, unsigned src, unsigned nthedge) {$/;"	f	class:Graph
+getDestinationSigma	./graph28.h	/^__device__ unsigned Graph::getDestinationSigma(unsigned *dstsigma, unsigned edge) {$/;"	f	class:Graph
+getDistance	./graph28.h	/^__device__ foru Graph::getDistance(foru *dist, unsigned nn) {$/;"	f	class:Graph
+getEdge	./graph28.h	/^__device__ __host__ void Graph::getEdge(unsigned edge, unsigned &src, unsigned &dst, foru &wt) {$/;"	f	class:Graph
+getEndEdge	./graph28.h	/^unsigned Graph::getEndEdge(unsigned it) {$/;"	f	class:Graph
+getEndNode	./graph28.h	/^unsigned Graph::getEndNode(unsigned it) {$/;"	f	class:Graph
+getFirstEdge	./graph28.h	/^__device__ unsigned Graph::getFirstEdge(unsigned src) {$/;"	f	class:Graph
+getFirstEdgeBSearch	./graph28.h	/^unsigned Graph::getFirstEdgeBSearch(unsigned src) {$/;"	f	class:Graph
+getFirstEdgeRandom	./graph28.h	/^__device__ unsigned Graph::getFirstEdgeRandom(unsigned src) {$/;"	f	class:Graph
+getInsum	./graph28.h	/^__device__ dorf Graph::getInsum(dorf *insum, unsigned nn) {$/;"	f	class:Graph
+getItem	./worklist7.h	/^__device__ unsigned Worklist::getItem(unsigned at) {$/;"	f	class:Worklist
+getItem	./worklist_cpu.h	/^unsigned Worklist_cpu::getItem(unsigned at) {$/;"	f	class:Worklist_cpu
+getItemWithin	./worklist7.h	/^__device__ unsigned Worklist::getItemWithin(unsigned at, unsigned hsize) {$/;"	f	class:Worklist
+getItemWithin	./worklist_cpu.h	/^unsigned Worklist_cpu::getItemWithin(unsigned at, unsigned hsize) {$/;"	f	class:Worklist_cpu
+getIterationFromEdge	./graph28.h	/^__host__ __device__ unsigned Graph::getIterationFromEdge(unsigned ee) {$/;"	f	class:Graph
+getIterationFromNode	./graph28.h	/^unsigned Graph::getIterationFromNode(unsigned nn) {     $/;"	f	class:Graph
+getMaxBlocks	./kernelconfig.h	/^unsigned KernelConfig::getMaxBlocks() {$/;"	f	class:KernelConfig
+getMaxSharedMemoryPerBlock	./kernelconfig.h	/^unsigned KernelConfig::getMaxSharedMemoryPerBlock() {$/;"	f	class:KernelConfig
+getMaxThreadsPerBlock	./kernelconfig.h	/^unsigned KernelConfig::getMaxThreadsPerBlock() {$/;"	f	class:KernelConfig
+getMinEdge	./graph28.h	/^__device__ unsigned Graph::getMinEdge(unsigned src) {$/;"	f	class:Graph
+getNumberOfBlockThreads	./kernelconfig.h	/^unsigned KernelConfig::getNumberOfBlockThreads() {$/;"	f	class:KernelConfig
+getNumberOfBlocks	./kernelconfig.h	/^unsigned KernelConfig::getNumberOfBlocks() {$/;"	f	class:KernelConfig
+getNumberOfSMs	./kernelconfig.h	/^unsigned KernelConfig::getNumberOfSMs() {$/;"	f	class:KernelConfig
+getNumberOfTotalThreads	./kernelconfig.h	/^unsigned KernelConfig::getNumberOfTotalThreads() {$/;"	f	class:KernelConfig
+getOutDegree	./graph28.h	/^__device__ unsigned Graph::getOutDegree(unsigned src) {$/;"	f	class:Graph
+getPR	./graph28.h	/^__device__ dorf Graph::getPR(dorf *pr, unsigned nn) {$/;"	f	class:Graph
+getProblemSize	./kernelconfig.h	/^unsigned KernelConfig::getProblemSize() {$/;"	f	class:KernelConfig
+getSigma	./graph28.h	/^__device__ unsigned Graph::getSigma(unsigned *sigma, unsigned nn) {$/;"	f	class:Graph
+getSize	./worklist7.h	/^unsigned Worklist::getSize() {$/;"	f	class:Worklist
+getSize	./worklist_cpu.h	/^unsigned Worklist_cpu::getSize() {$/;"	f	class:Worklist_cpu
+getStartEdge	./graph28.h	/^unsigned Graph::getStartEdge(unsigned it) {$/;"	f	class:Graph
+getStartEnd	./worklist7.h	/^void Worklist::getStartEnd(unsigned &hstart, unsigned &hend) {$/;"	f	class:Worklist
+getStartEnd	./worklist_cpu.h	/^void Worklist_cpu::getStartEnd(unsigned &hstart, unsigned &hend) {$/;"	f	class:Worklist_cpu
+getStartNode	./graph28.h	/^unsigned Graph::getStartNode(unsigned it) {$/;"	f	class:Graph
+getStartNodeFromNode	./graph28.h	/^unsigned Graph::getStartNodeFromNode(unsigned nn) {$/;"	f	class:Graph
+getWeight	./graph28.h	/^__device__ foru Graph::getWeight(unsigned src, unsigned nthedge) {$/;"	f	class:Graph
+get_smid	./cutil_subset.h	/^static __device__ uint get_smid(void) {$/;"	f
+gpu_BFS	./bc.cu	/^void *gpu_BFS(void *var){$/;"	f
+gpu_BFS	./partition_metis.cu	/^void *gpu_BFS(void *var){$/;"	f
+gpu_BorderMatrix_comp	./bc.cu	/^void *gpu_BorderMatrix_comp(void *var){$/;"	f
+gpu_F_I	./Structs.h	/^	double gpu_F_I,gpu_F_R,gpu_bck_knl_time,gpu_fwd_knl_time,gpu_tot_bck_time;$/;"	m	struct:varto_gpu_part
+gpu_F_R	./Structs.h	/^	double gpu_F_I,gpu_F_R,gpu_bck_knl_time,gpu_fwd_knl_time,gpu_tot_bck_time;$/;"	m	struct:varto_gpu_part
+gpu_Relax	./bc.cu	/^void *gpu_Relax(void *var){$/;"	f
+gpu_SingleRelax	./bc.cu	/^void gpu_SingleRelax(void *P){$/;"	f
+gpu_backward	./backward_phase.cu	/^void *gpu_backward(void *var){$/;"	f
+gpu_bck_knl_time	./Structs.h	/^	double gpu_F_I,gpu_F_R,gpu_bck_knl_time,gpu_fwd_knl_time,gpu_tot_bck_time;$/;"	m	struct:varto_gpu_part
+gpu_component	./backward_phase.cu	/^void gpu_component (unsigned *edgesrc,unsigned *edgedst,unsigned nnodes,unsigned nedges,unsigned *nodedist,unsigned *nodesigma,unsigned *edgesigma,float *nodedelta,int *wait,unsigned *border,float *borderDelta, unsigned borderCount,long level){$/;"	f
+gpu_component	./bc.cu	/^void gpu_component (unsigned *psrc,unsigned *noutgoing,unsigned *d_psrc,unsigned *d_noutgoing,unsigned *edgesdstsrc,unsigned *edgessrcdst,unsigned hedges,unsigned hnodes,unsigned *hdist,unsigned *nodesigma,unsigned *edgesigma,unsigned source_count,unsigned *sources,cudaDeviceProp *dp,bool BM_COMP,unsigned *nerr)$/;"	f
+gpu_component	./partition_metis.cu	/^void gpu_component (unsigned *psrc,unsigned *noutgoing,unsigned *d_psrc,unsigned *d_noutgoing,unsigned *edgesdstsrc,unsigned *edgessrcdst,unsigned hedges,unsigned hnodes,unsigned *hdist,unsigned *nodesigma,unsigned *edgesigma,unsigned source_count,unsigned *sources,cudaDeviceProp *dp,bool BM_COMP,unsigned *nerr)$/;"	f
+gpu_fwd_knl_time	./Structs.h	/^	double gpu_F_I,gpu_F_R,gpu_bck_knl_time,gpu_fwd_knl_time,gpu_tot_bck_time;$/;"	m	struct:varto_gpu_part
+gpu_level	./Structs.h	/^	long *gpu_level;$/;"	m	struct:varto_gpu_part
+gpu_level	./Structs.h	/^	volatile long *gpu_level;$/;"	m	struct:varto_cpu_part
+gpu_level_min	./Structs.h	/^	long *cpu_level_min, *gpu_level_min;$/;"	m	struct:varto_cpu_part
+gpu_level_min	./Structs.h	/^	long *cpu_level_min, *gpu_level_min;$/;"	m	struct:varto_gpu_part
+gpu_ratiotime	./bc.cu	/^double cpu_ratiotime,gpu_ratiotime;$/;"	v
+gpu_ratiotime	./partition_metis.cu	/^double cpu_ratiotime,gpu_ratiotime;$/;"	v
+gpu_single_component	./backward_phase.cu	/^void gpu_single_component (unsigned *edgesrc,unsigned *edgedst,unsigned nnodes,unsigned nedges,unsigned *nodedist,unsigned *nodesigma,unsigned *edgesigma,float *nodedelta,unsigned *border,float *borderDelta, unsigned borderCount, long level){$/;"	f
+gpu_tot_bck_time	./Structs.h	/^	double gpu_F_I,gpu_F_R,gpu_bck_knl_time,gpu_fwd_knl_time,gpu_tot_bck_time;$/;"	m	struct:varto_gpu_part
+gpupart	./Structs.h	/^        Graph::DevicePartition *gpupart;$/;"	m	struct:varto_gpu_part
+graph	./Structs.h	/^	Graph *graph;$/;"	m	struct:varto_cpu_part
+graph	./Structs.h	/^	Graph *graph;$/;"	m	struct:varto_gpu_part
+handle_error_en	./common.h	34;"	d
+heapchk_div	./patoh.h	/^int		heapchk_div;$/;"	m	struct:__anon3
+heapchk_mul	./patoh.h	/^int		heapchk_mul;$/;"	m	struct:__anon3
+hnerr	./bfs_ddV3.cu	/^unsigned hnerr;$/;"	v
+init	./graph28.h	/^unsigned Graph::init(unsigned percgraph) {$/;"	f	class:Graph
+init	./kernelconfig.h	/^void KernelConfig::init() {$/;"	f	class:KernelConfig
+init	./list.h	/^__device__ void List::init(unsigned *mem, unsigned size, unsigned cap) {$/;"	f	class:List
+init	./scheduler19.h	/^void Scheduler::init(unsigned ntasks) {$/;"	f	class:Scheduler
+init	./worklist7.h	/^void Worklist::init() {$/;"	f	class:Worklist
+init	./worklist7.h	/^void Worklist::init(unsigned initialcapacity) {$/;"	f	class:Worklist
+init	./worklist_cpu.h	/^void Worklist_cpu::init() {$/;"	f	class:Worklist_cpu
+init	./worklist_cpu.h	/^void Worklist_cpu::init(unsigned initialcapacity) {$/;"	f	class:Worklist_cpu
+initData	./scheduler19.h	/^void Scheduler::initData(unsigned newdata\/* = 0*\/) {$/;"	f	class:Scheduler
+initEnabled	./scheduler19.h	/^void Scheduler::initEnabled() {$/;"	f	class:Scheduler
+initFrom	./graph28.h	/^int Graph::initFrom(Graph &from) {$/;"	f	class:Graph
+initLevels	./graph28.h	/^__device__ void Graph::initLevels() {$/;"	f	class:Graph
+initOrder	./scheduler19.h	/^void Scheduler::initOrder() {$/;"	f	class:Scheduler
+init_imbal	./patoh.h	/^double		init_imbal,     $/;"	m	struct:__anon3
+init_sol_discard_mult	./patoh.h	/^float		init_sol_discard_mult,$/;"	m	struct:__anon3
+initbc	./bc.cu	/^void initbc(dorf *bc, unsigned nv) {$/;"	f
+initialize	./bfs_worklistc.cu	/^void initialize(foru *dist, unsigned hnodes,  unsigned *sources,unsigned count,Worklist &inwl, Worklist &outwl) {$/;"	f
+initnodesigmadist	./bc.cu	/^void initnodesigmadist(unsigned source, unsigned nodes, unsigned* nodesigma, unsigned* nodedist){$/;"	f
+initnodesigmadist	./partition_metis.cu	/^void initnodesigmadist(unsigned source, unsigned nodes, unsigned* nodesigma, unsigned* nodedist){$/;"	f
+initnodesigmadist_multisource	./bc.cu	/^void initnodesigmadist_multisource(Graph *graph,unsigned *values, unsigned *sigma_values,unsigned nodes, unsigned* nodesigma, unsigned* nodedist,unsigned *sources,unsigned source_count,unsigned *psrc,unsigned *noutgoing,unsigned *edgedst,unsigned *border){$/;"	f
+initnodesigmadist_multisource	./partition_metis.cu	/^void initnodesigmadist_multisource(Graph *graph,unsigned *values, unsigned *sigma_values,unsigned nodes, unsigned* nodesigma, unsigned* nodedist,unsigned *sources,unsigned source_count,unsigned *psrc,unsigned *noutgoing,unsigned *edgedst,unsigned *border){$/;"	f
+initnodesigmadist_multisource_omp	./bc.cu	/^void initnodesigmadist_multisource_omp(Graph *graph,unsigned *values,unsigned *sigma_values,unsigned nodes, unsigned* nodesigma, unsigned* nodedist,unsigned *sources,unsigned source_count,int num_threads,unsigned *psrc,unsigned *noutgoing,unsigned *edgedst,unsigned *border){$/;"	f
+initnodesigmadist_multisource_omp	./partition_metis.cu	/^void initnodesigmadist_multisource_omp(Graph *graph,unsigned *values,unsigned *sigma_values,unsigned nodes, unsigned* nodesigma, unsigned* nodedist,unsigned *sources,unsigned source_count,int num_threads,unsigned *psrc,unsigned *noutgoing,unsigned *edgedst,unsigned *border){$/;"	f
+initnodesigmadist_multisource_omp_singlerelax	./bc.cu	/^void initnodesigmadist_multisource_omp_singlerelax(Graph *graph,unsigned *values,unsigned *sigma_values,unsigned nodes, unsigned* nodesigma, unsigned* nodedist,unsigned *sources,unsigned source_count,int num_threads){$/;"	f
+initnodesigmadist_multisource_omp_singlerelax	./partition_metis.cu	/^void initnodesigmadist_multisource_omp_singlerelax(Graph *graph,unsigned *values,unsigned *sigma_values,unsigned nodes, unsigned* nodesigma, unsigned* nodedist,unsigned *sources,unsigned source_count,int num_threads){$/;"	f
+initnodesigmadist_multisource_singlerelax	./bc.cu	/^void initnodesigmadist_multisource_singlerelax(Graph *graph,unsigned *values, unsigned *sigma_values,unsigned nodes, unsigned* nodesigma, unsigned* nodedist,unsigned *sources,unsigned source_count){$/;"	f
+initnodesigmadist_multisource_singlerelax	./partition_metis.cu	/^void initnodesigmadist_multisource_singlerelax(Graph *graph,unsigned *values, unsigned *sigma_values,unsigned nodes, unsigned* nodesigma, unsigned* nodedist,unsigned *sources,unsigned source_count){$/;"	f
+initnodesigmadist_omp	./bc.cu	/^void initnodesigmadist_omp(unsigned source, unsigned nodes, unsigned* nodesigma, unsigned* nodedist,int num_threads){$/;"	f
+initnodesigmadist_omp	./partition_metis.cu	/^void initnodesigmadist_omp(unsigned source, unsigned nodes, unsigned* nodesigma, unsigned* nodedist,int num_threads){$/;"	f
+initp_alg	./patoh.h	/^int		initp_alg;           \/* PATOH_IPA_... *\/$/;"	m	struct:__anon3
+initp_ghg_trybalance	./patoh.h	/^int             initp_ghg_trybalance;$/;"	m	struct:__anon3
+initp_refalg	./patoh.h	/^int             initp_refalg;        \/* PATOH_REFALG_... *\/$/;"	m	struct:__anon3
+initp_runno	./patoh.h	/^int             initp_runno;$/;"	m	struct:__anon3
+inputfilename	./patoh.h	/^char		inputfilename[512];$/;"	m	struct:__anon3
+isDisabled	./scheduler19.h	/^bool Scheduler::isDisabled(unsigned task) {$/;"	f	class:Scheduler
+isEnabled	./scheduler19.h	/^bool Scheduler::isEnabled(unsigned task) {$/;"	f	class:Scheduler
+isFull_I4	./EMS_x86_64.h	/^isFull_I4(sync_int32_t *mem_loc)$/;"	f
+isFull_I8	./EMS_x86_64.h	/^isFull_I8(sync_int64_t *mem_loc)$/;"	f
+it	./Structs.h	/^	unsigned it;	\/\/ current iteration.$/;"	m	struct:Graph
+items	./Structs.h	/^	unsigned *items;$/;"	m	struct:Worklist_cpu
+kconf	./Structs.h	/^	KernelConfig *kconf;$/;"	m	struct:varto_gpu_part
+kernel_ddV3	./cudaKernels.h	/^void kernel_ddV3(unsigned *dist,unsigned *nodesigma,unsigned *edgesigma,bool BM_COMP,unsigned *edgessrc,unsigned *edgesdst, unsigned *psrc,unsigned *noutgoing,Worklist inwl, Worklist outwl,unsigned *gerrno)\/\/,unsigned *dmaxdeg)\/\/Add round Robin$/;"	f
+length	./worklistc.h	/^  int length, *dnsize;$/;"	m	struct:Worklist
+letsOrder	./scheduler19.h	/^void Scheduler::letsOrder() {$/;"	f	class:Scheduler
+localchanged	./Structs.h	/^        bool* active, *localchanged;$/;"	m	struct:varto_gpu_part
+lock	./Structs.h	/^	omp_lock_t *lock;$/;"	m	struct:varto_cpu_part
+lock	./Structs.h	/^	omp_lock_t *lock;$/;"	m	struct:varto_gpu_part
+lonestar_gpu	./bfs_worklistc.cu	/^void lonestar_gpu(unsigned *psrc,unsigned *noutgoing,unsigned *d_psrc,unsigned *d_noutgoing,unsigned *d_edgessrc,unsigned *d_edgesdst,unsigned hnodes,unsigned hedges,unsigned *dist,unsigned *nodesigma,unsigned *edgesigma,unsigned source_count,unsigned *sources,cudaDeviceProp *deviceProp,bool BM_COMP,unsigned *nerr)$/;"	f
+main	./bc.cu	/^int main(int argc, char *argv[]) {$/;"	f
+main	./partition_metis.cu	/^int main(int argc, char *argv[]){$/;"	f
+main	./partition_patoh.cu	/^int main(int argc, char *argv[]){$/;"	f
+matrix_csr	./bc.cu	/^struct matrix_csr{$/;"	s	file:
+maxEdgeCount	./Structs.h	/^        unsigned int maxEdgeCount;$/;"	m	struct:Graph
+maxNodeCount	./Structs.h	/^        unsigned int maxNodeCount;$/;"	m	struct:Graph
+maxOutDegree	./Structs.h	/^	unsigned *maxOutDegree;$/;"	m	struct:Graph
+maxcellinheap	./patoh.h	/^int		maxcellinheap;$/;"	m	struct:__anon3
+memory	./Structs.h	/^	enum {NotAllocated, AllocatedOnHost, AllocatedOnDevice} memory;$/;"	m	struct:Graph	typeref:enum:Graph::__anon1
+memory	./Structs.h	/^	enum {NotAllocated, AllocatedOnHost, AllocatedOnDevice} memory;$/;"	m	struct:Worklist_cpu	typeref:enum:Worklist_cpu::__anon2
+modify_matrix	./bc.cu	/^void modify_matrix(struct matrix_csr *M,unsigned i, unsigned j,unsigned dist,unsigned sig){$/;"	f
+myItems	./worklist7.h	/^__device__ void Worklist::myItems(unsigned &mystart, unsigned &myend) {$/;"	f	class:Worklist
+myItems	./worklist_cpu.h	/^void Worklist_cpu::myItems(unsigned &mystart, unsigned &myend) {$/;"	f	class:Worklist_cpu
+nblocks	./Structs.h	/^	unsigned nblocks, blocksize;$/;"	m	struct:KernelConfig
+nedges	./Structs.h	/^	unsigned nnodes, nedges; $/;"	m	struct:Graph
+nedgesresident	./Structs.h	/^	unsigned nnodesresident, nedgesresident;$/;"	m	struct:Graph
+nedgessliding	./Structs.h	/^	unsigned nedgessliding;	\/\/ < nnodesresident.$/;"	m	struct:Graph
+nenabled	./scheduler19.h	/^	unsigned nenabled;$/;"	m	struct:Scheduler
+nerr	./Structs.h	/^	unsigned *psrc, *noutgoing,*nerr;$/;"	m	struct:varto_gpu_part
+next	./scheduler19.h	/^unsigned Scheduler::next() {$/;"	f	class:Scheduler
+nextEnabled	./scheduler19.h	/^unsigned Scheduler::nextEnabled() {$/;"	f	class:Scheduler
+nincoming	./Structs.h	/^	unsigned *noutgoing, *srcsrc, *edgessrcdst,*edgedstsrc,*nincoming;$/;"	m	struct:Graph
+nitems	./list.h	/^	unsigned nitems;$/;"	m	struct:List
+nitems	./worklistc.h	/^  int nitems()$/;"	f	struct:Worklist
+nnodes	./Structs.h	/^	unsigned nnodes, nedges; $/;"	m	struct:Graph
+nnodesresident	./Structs.h	/^	unsigned nnodesresident, nedgesresident;$/;"	m	struct:Graph
+nodeCount	./Structs.h	/^	  unsigned int* nodeCount;$/;"	m	struct:Graph::Partition
+nodedelta	./Structs.h	/^	float *nodedelta;$/;"	m	struct:varto_gpu_part
+nodedelta	./Structs.h	/^          float * nodedelta;$/;"	m	struct:Graph::DevicePartition
+nodedist	./Structs.h	/^	unsigned *nodesigma, *edgesigma, *edgesrc, *edgedst, *nodedist, *edgedstdist, *edgewt,*border;$/;"	m	struct:varto_gpu_part
+nodedist	./Structs.h	/^          unsigned * nodedist;$/;"	m	struct:Graph::DevicePartition
+nodesigma	./Structs.h	/^	unsigned *nodesigma, *edgesigma, *edgesrc, *edgedst, *nodedist, *edgedstdist, *edgewt,*border;$/;"	m	struct:varto_gpu_part
+nodesigma	./Structs.h	/^          unsigned * nodesigma;$/;"	m	struct:Graph::DevicePartition
+nofinstances	./patoh.h	/^int		nofinstances;$/;"	m	struct:__anon3
+nonsrcpart	./Structs.h	/^	Graph::DevicePartition *nonsrcpart;$/;"	m	struct:varto_gpu_part
+nonsrcpartition	./Structs.h	/^	int srcpartition, nonsrcpartition;$/;"	m	struct:varto_cpu_part
+nonsrcpartition	./Structs.h	/^	int srcpartition, nonsrcpartition;$/;"	m	struct:varto_gpu_part
+noofrun	./patoh.h	/^int		noofrun;$/;"	m	struct:__anon3
+noutgoing	./Structs.h	/^	unsigned *noutgoing, *srcsrc, *edgessrcdst,*edgedstsrc,*nincoming;$/;"	m	struct:Graph
+noutgoing	./Structs.h	/^	unsigned *psrc, *noutgoing,*nerr;$/;"	m	struct:varto_gpu_part
+noutgoing	./Structs.h	/^	unsigned *psrc, *noutgoing;$/;"	m	struct:varto_cpu_part
+noutgoing	./Structs.h	/^          unsigned *noutgoing;$/;"	m	struct:Graph::DevicePartition
+noverflows	./Structs.h	/^	unsigned noverflows;$/;"	m	struct:Worklist_cpu
+nparts	./Structs.h	/^	  int nparts;$/;"	m	struct:Graph::Partition
+ntasks	./scheduler19.h	/^	unsigned ntasks;$/;"	m	struct:Scheduler
+numEdges	./Structs.h	/^          unsigned int numEdges;$/;"	m	struct:Graph::DevicePartition
+numNodes	./Structs.h	/^          unsigned int numNodes;$/;"	m	struct:Graph::DevicePartition
+num_threads	./Structs.h	/^	int num_threads;$/;"	m	struct:Graph
+num_threads	./Structs.h	/^	int num_threads;$/;"	m	struct:varto_cpu_part
+num_threads	./Structs.h	/^	int num_threads;$/;"	m	struct:varto_gpu_part
+order	./scheduler19.h	/^	unsigned *data, *order;$/;"	m	struct:Scheduler
+outputdetail	./patoh.h	/^int		outputdetail;        \/* PATOH_OD_... *\/$/;"	m	struct:__anon3
+part	./Structs.h	/^	  int* part;$/;"	m	struct:Graph::Partition
+partition	./Structs.h	/^	Graph::DevicePartition *partition;$/;"	m	struct:varto_cpu_part
+partition	./Structs.h	/^	} partition;$/;"	m	struct:Graph	typeref:struct:Graph::Partition
+patoh_partition	./partition_patoh.cu	/^int patoh_partition(char *filename,int *partweights,float *targetweights)$/;"	f
+pause	./EMS_x86_64.h	/^pause(void *mem_loc) {$/;"	f
+pop	./worklist7.h	/^__device__ unsigned Worklist::pop(unsigned &work) {$/;"	f	class:Worklist
+pop	./worklist_cpu.h	/^unsigned Worklist_cpu::pop(unsigned &work) {$/;"	f	class:Worklist_cpu
+pop	./worklistc.h	/^  int pop(int &item)$/;"	f	struct:Worklist
+popRange	./worklist7.h	/^__device__ unsigned Worklist::popRange(unsigned *copyto, unsigned nitems) {$/;"	f	class:Worklist
+popRange	./worklist_cpu.h	/^unsigned Worklist_cpu::popRange(unsigned *copyto, unsigned nitems) {$/;"	f	class:Worklist_cpu
+pop_id	./worklistc.h	/^  int pop_id(int id, unsigned &item)$/;"	f	struct:Worklist
+prev	./scheduler19.h	/^unsigned Scheduler::prev() {$/;"	f	class:Scheduler
+previousupdated	./scheduler19.h	/^	unsigned currenttask, previousupdated;$/;"	m	struct:Scheduler
+print	./graph28.h	/^void Graph::print() {$/;"	f	class:Graph
+print	./scheduler19.h	/^void Scheduler::print() {$/;"	f	class:Scheduler
+print1x1	./graph28.h	/^__host__ __device__ void Graph::print1x1() {$/;"	f	class:Graph
+printDegrees	./graph28.h	/^void Graph::printDegrees(unsigned startnn, unsigned nnn) {$/;"	f	class:Graph
+printEdges	./graph28.h	/^void Graph::printEdges(unsigned startee, unsigned nee) {$/;"	f	class:Graph
+printEdgesOf	./graph28.h	/^void Graph::printEdgesOf(unsigned nn) {$/;"	f	class:Graph
+printEnabled	./scheduler19.h	/^void Scheduler::printEnabled() {$/;"	f	class:Scheduler
+printHost	./worklist7.h	/^void Worklist::printHost() {$/;"	f	class:Worklist
+printHost	./worklist_cpu.h	/^void Worklist_cpu::printHost() {$/;"	f	class:Worklist_cpu
+printOneEdge	./graph28.h	/^void Graph::printOneEdge(unsigned ee) {$/;"	f	class:Graph
+printResident	./graph28.h	/^__device__ void Graph::printResident(unsigned it, unsigned nprintnodes\/* = 100*\/) {$/;"	f	class:Graph
+printResidentDevice	./graph28.h	/^void Graph::printResidentDevice(unsigned it, unsigned nprintnodes\/* = 100*\/) {$/;"	f	class:Graph
+printResidentNode	./graph28.h	/^__device__ void Graph::printResidentNode(unsigned ii) {$/;"	f	class:Graph
+printStats	./graph28.h	/^unsigned Graph::printStats() {$/;"	f	class:Graph
+printStats1x1	./graph28.h	/^__device__ void Graph::printStats1x1() {	\/\/ 1x1.$/;"	f	class:Graph
+printWorklist	./worklist7.h	/^__global__ void printWorklist(Worklist wl) {$/;"	f
+printWorklist	./worklist_cpu.h	/^void printWorklist(Worklist_cpu wl) {$/;"	f
+print_array	./bfs_worklistc.cu	/^__global__ void print_array(int *a, int n)$/;"	f
+problemsize	./Structs.h	/^	unsigned problemsize;$/;"	m	struct:KernelConfig
+processedge2	./bfs_worklistc.cu	/^foru processedge2(foru *dist, unsigned hnodes,unsigned *nodesigma,unsigned *edgesigma,unsigned *srcsrc,unsigned *edgesdst,unsigned iteration, unsigned edge, unsigned &dst) {$/;"	f
+processnode2	./bfs_worklistc.cu	/^unsigned processnode2(foru *dist, unsigned hnodes,unsigned *nodesigma,unsigned *edgesigma,unsigned *srcsrc,unsigned *edgesdst,unsigned *noutgoing , Worklist &inwl, Worklist &outwl, unsigned iteration) $/;"	f
+progressPrint	./graph28.h	/^void Graph::progressPrint(unsigned maxii, unsigned ii) {$/;"	f	class:Graph
+psrc	./Structs.h	/^	unsigned *psrc, *noutgoing,*nerr;$/;"	m	struct:varto_gpu_part
+psrc	./Structs.h	/^	unsigned *psrc, *noutgoing;$/;"	m	struct:varto_cpu_part
+psrc	./Structs.h	/^	unsigned *psrc;$/;"	m	struct:Graph
+psrc	./Structs.h	/^          unsigned *psrc;$/;"	m	struct:Graph::DevicePartition
+push	./list.h	/^__device__ void List::push(unsigned item) {$/;"	f	class:List
+push	./worklist7.h	/^__device__ unsigned Worklist::push(unsigned work) {$/;"	f	class:Worklist
+push	./worklist_cpu.h	/^unsigned Worklist_cpu::push(unsigned work) {$/;"	f	class:Worklist_cpu
+push	./worklistc.h	/^  int push(int item)$/;"	f	struct:Worklist
+pushHost	./worklist7.h	/^void Worklist::pushHost(unsigned work) {$/;"	f	class:Worklist
+pushHost	./worklist_cpu.h	/^void Worklist_cpu::pushHost(unsigned work) {$/;"	f	class:Worklist_cpu
+pushRange	./worklist7.h	/^__device__ unsigned Worklist::pushRange(unsigned *copyfrom, unsigned nitems) {$/;"	f	class:Worklist
+pushRange	./worklist_cpu.h	/^unsigned Worklist_cpu::pushRange(unsigned *copyfrom, unsigned nitems) {$/;"	f	class:Worklist_cpu
+pushRangeEdges	./worklist7.h	/^__device__ unsigned Worklist::pushRangeEdges(unsigned startindex, unsigned nitems) {$/;"	f	class:Worklist
+pushRangeEdges	./worklist_cpu.h	/^unsigned Worklist_cpu::pushRangeEdges(unsigned startindex, unsigned nitems) {$/;"	f	class:Worklist_cpu
+pushRangeHost	./worklist7.h	/^void Worklist::pushRangeHost(unsigned *copyfrom, unsigned nitems) {$/;"	f	class:Worklist
+pushRangeHost	./worklist_cpu.h	/^void Worklist_cpu::pushRangeHost(unsigned *copyfrom, unsigned nitems) {$/;"	f	class:Worklist_cpu
+push_1item	./worklistc.h	/^    int push_1item(int nitem, int item, int threads_per_block)$/;"	f	struct:Worklist
+push_nitems	./worklistc.h	/^  int push_nitems(int n_items, int *items, int threads_per_block)$/;"	f	struct:Worklist
+read	./graph28.h	/^unsigned Graph::read(char file[], bool weighted\/* = true*\/) {$/;"	f	class:Graph
+readFE_I4	./EMS_x86_64.h	/^readFE_I4(sync_int32_t *mem_loc) {$/;"	f
+readFE_I8	./EMS_x86_64.h	/^readFE_I8(sync_int64_t *mem_loc) {$/;"	f
+readFE_UI4	./EMS_x86_64.h	/^readFE_UI4(sync_uint32_t *mem_loc) {$/;"	f
+readFF_I4	./EMS_x86_64.h	/^readFF_I4(sync_int32_t *mem_loc) {$/;"	f
+readFF_I8	./EMS_x86_64.h	/^readFF_I8(sync_int64_t *mem_loc) {$/;"	f
+readFromEdges	./graph28.h	/^unsigned Graph::readFromEdges(char file[]) {$/;"	f	class:Graph
+readFromGR	./graph28.h	/^unsigned Graph::readFromGR(char file[], bool weighted) {$/;"	f	class:Graph
+readXX_I4	./EMS_x86_64.h	/^readXX_I4(sync_int32_t *mem_loc)$/;"	f
+readXX_I8	./EMS_x86_64.h	/^readXX_I8(sync_int64_t *mem_loc)$/;"	f
+realloc	./worklist7.h	/^unsigned Worklist::realloc(unsigned space) {$/;"	f	class:Worklist
+realloc	./worklist_cpu.h	/^unsigned Worklist_cpu::realloc(unsigned space) {$/;"	f	class:Worklist_cpu
+ref_alg	./patoh.h	/^int		ref_alg;             \/* PATOH_REFALG_... *\/$/;"	m	struct:__anon3
+ref_dynamiclockcnt	./patoh.h	/^int		ref_dynamiclockcnt;    $/;"	m	struct:__anon3
+ref_maxnegmove	./patoh.h	/^		ref_maxnegmove;$/;"	m	struct:__anon3
+ref_maxnegmovemult	./patoh.h	/^float           ref_maxnegmovemult;$/;"	m	struct:__anon3
+ref_passcnt	./patoh.h	/^int		ref_passcnt,$/;"	m	struct:__anon3
+ref_slow_uncoarsening	./patoh.h	/^float           ref_slow_uncoarsening;    $/;"	m	struct:__anon3
+ref_useafter	./patoh.h	/^int             ref_useafter, ref_useafteralg;$/;"	m	struct:__anon3
+ref_useafteralg	./patoh.h	/^int             ref_useafter, ref_useafteralg;$/;"	m	struct:__anon3
+removeDevicePartitions	./graph28.h	/^void Graph::removeDevicePartitions(Graph &from){$/;"	f	class:Graph
+reorderEnabled	./scheduler19.h	/^void Scheduler::reorderEnabled() {$/;"	f	class:Scheduler
+reorderOnUpdate	./scheduler19.h	/^void Scheduler::reorderOnUpdate() {$/;"	f	class:Scheduler
+reorderonupdate	./scheduler19.h	/^	bool reorderonupdate;$/;"	m	struct:Scheduler
+reset	./worklistc.h	/^  void reset()$/;"	f	struct:Worklist
+reset_I4	./EMS_x86_64.h	/^reset_I4(sync_int32_t *mem_loc)$/;"	f
+reset_I8	./EMS_x86_64.h	/^reset_I8(sync_int64_t *mem_loc)$/;"	f
+row_offsets	./bfs_worklistc.cu	/^texture <unsigned, 1, cudaReadModeElementType> row_offsets;$/;"	v
+row_size	./bc.cu	/^	unsigned row_size;$/;"	m	struct:matrix_csr	file:
+rtclock	./common.h	/^inline double rtclock()$/;"	f
+seed	./patoh.h	/^int		seed;$/;"	m	struct:__anon3
+setCapacity	./worklist7.h	/^void Worklist::setCapacity(unsigned hcapacity) {$/;"	f	class:Worklist
+setCapacity	./worklist_cpu.h	/^void Worklist_cpu::setCapacity(unsigned hcapacity) {$/;"	f	class:Worklist_cpu
+setDestinationDistance	./graph28.h	/^__device__ void Graph::setDestinationDistance(foru *dstdist, unsigned ee, foru altdist) {$/;"	f	class:Graph
+setInitialSize	./worklist7.h	/^void Worklist::setInitialSize(unsigned hsize) {$/;"	f	class:Worklist
+setInitialSize	./worklist_cpu.h	/^void Worklist_cpu::setInitialSize(unsigned hsize) {$/;"	f	class:Worklist_cpu
+setMaxThreadsPerBlock	./kernelconfig.h	/^unsigned KernelConfig::setMaxThreadsPerBlock() {$/;"	f	class:KernelConfig
+setNumberOfBlockThreads	./kernelconfig.h	/^unsigned KernelConfig::setNumberOfBlockThreads(unsigned lblocksize) {$/;"	f	class:KernelConfig
+setNumberOfBlocks	./kernelconfig.h	/^unsigned KernelConfig::setNumberOfBlocks(unsigned lnblocks) {$/;"	f	class:KernelConfig
+setNumberOfBlocksPerSM	./kernelconfig.h	/^unsigned KernelConfig::setNumberOfBlocksPerSM(unsigned lnblocks) {$/;"	f	class:KernelConfig
+setPR	./graph28.h	/^__device__ void Graph::setPR(dorf *pr, unsigned nn, dorf rr) {$/;"	f	class:Graph
+setProblemSize	./kernelconfig.h	/^unsigned KernelConfig::setProblemSize(unsigned size) {$/;"	f	class:KernelConfig
+setSize	./worklist7.h	/^void Worklist::setSize(unsigned hsize) {$/;"	f	class:Worklist
+setSize	./worklist_cpu.h	/^void Worklist_cpu::setSize(unsigned hsize) {$/;"	f	class:Worklist_cpu
+setStartEnd	./worklist7.h	/^void Worklist::setStartEnd(unsigned hstart, unsigned hend) {$/;"	f	class:Worklist
+setStartEnd	./worklist_cpu.h	/^void Worklist_cpu::setStartEnd(unsigned hstart, unsigned hend) {$/;"	f	class:Worklist_cpu
+sfour	./Structs.h	/^	cudaStream_t sone, stwo,sthree,sfour;$/;"	m	struct:varto_gpu_part
+sig	./bc.cu	/^	unsigned sig;$/;"	m	struct:d_s	file:
+sig	./bc.cu	/^	vector<unsigned> sig;$/;"	m	struct:matrix_csr	file:
+single_relax	./Structs.h	/^	bool single_relax;$/;"	m	struct:varto_cpu_part
+single_relax	./Structs.h	/^	bool single_relax;$/;"	m	struct:varto_gpu_part
+size	./list.h	/^__device__ unsigned List::size() {$/;"	f	class:List
+smallVcycle	./patoh.h	/^                smallVcycle,$/;"	m	struct:__anon3
+sone	./Structs.h	/^	cudaStream_t sone, stwo,sthree,sfour;$/;"	m	struct:varto_gpu_part
+source	./Structs.h	/^	unsigned source;$/;"	m	struct:varto_cpu_part
+source	./Structs.h	/^	unsigned source;$/;"	m	struct:varto_gpu_part
+srcpart	./Structs.h	/^	Graph::DevicePartition *srcpart;$/;"	m	struct:varto_gpu_part
+srcpartition	./Structs.h	/^	int srcpartition, nonsrcpartition;$/;"	m	struct:varto_cpu_part
+srcpartition	./Structs.h	/^	int srcpartition, nonsrcpartition;$/;"	m	struct:varto_gpu_part
+srcsrc	./Structs.h	/^	unsigned *noutgoing, *srcsrc, *edgessrcdst,*edgedstsrc,*nincoming;$/;"	m	struct:Graph
+start	./Structs.h	/^	unsigned *start, *end, *capacity;	\/\/ since these change, we don't want their copies with threads, hence pointers.$/;"	m	struct:Worklist_cpu
+sthree	./Structs.h	/^	cudaStream_t sone, stwo,sthree,sfour;$/;"	m	struct:varto_gpu_part
+stwo	./Structs.h	/^	cudaStream_t sone, stwo,sthree,sfour;$/;"	m	struct:varto_gpu_part
+swapEnabled	./scheduler19.h	/^void Scheduler::swapEnabled(unsigned one, unsigned two) {$/;"	f	class:Scheduler
+swapOrder	./scheduler19.h	/^void Scheduler::swapOrder(unsigned one, unsigned two) {$/;"	f	class:Scheduler
+sync_int32_t	./EMS_x86_64.h	/^typedef volatile int32_t sync_int32_t;$/;"	t
+sync_int64_t	./EMS_x86_64.h	/^typedef volatile int64_t sync_int64_t;$/;"	t
+sync_uint32_t	./EMS_x86_64.h	/^typedef volatile uint32_t sync_uint32_t;$/;"	t
+toArray	./list.h	/^__device__ unsigned *List::toArray() {$/;"	f	class:List
+uniq	./list.h	/^__device__ void List::uniq(unsigned *mark, unsigned maxelement) {$/;"	f	class:List
+update	./scheduler19.h	/^void Scheduler::update(unsigned task, unsigned newdata) {$/;"	f	class:Scheduler
+update_cpu	./worklistc.h	/^  void update_cpu()$/;"	f	struct:Worklist
+usebucket	./patoh.h	/^int		usebucket;$/;"	m	struct:__anon3
+usesamematchinginVcycles	./patoh.h	/^		usesamematchinginVcycles;$/;"	m	struct:__anon3
+varto_cpu_part	./Structs.h	/^struct varto_cpu_part{$/;"	s
+varto_gpu_part	./Structs.h	/^struct varto_gpu_part{$/;"	s
+verify	./bc.cu	/^unsigned verify(dorf *bc, Graph &graph) {$/;"	f
+vid_t	./cpu_nodebased.cu	/^typedef unsigned vid_t;$/;"	t	file:
+wl	./worklistc.h	/^  int *dwl, *wl;$/;"	m	struct:Worklist
+worklist_cpu	./cpu_ddV3.cu	/^extern "C" void worklist_cpu(unsigned *psrc,unsigned *noutgoing,unsigned *edgessrc,unsigned *edgesdst,unsigned hnodes,unsigned hedges,unsigned *hdist,unsigned *nodesigma,unsigned *edgesigma,unsigned source_count,unsigned *sources,omp_lock_t *writelock,bool BM_COMP,int num_threads){$/;"	f
+writeEF_I4	./EMS_x86_64.h	/^writeEF_I4(sync_int32_t *mem_loc, int32_t mem_val) {$/;"	f
+writeEF_I8	./EMS_x86_64.h	/^writeEF_I8(sync_int64_t *mem_loc, int64_t mem_val) {$/;"	f
+writeEF_UI4	./EMS_x86_64.h	/^writeEF_UI4(sync_uint32_t *mem_loc, uint32_t mem_val) {$/;"	f
+writeFF_I4	./EMS_x86_64.h	/^writeFF_I4(sync_int32_t *mem_loc, int32_t mem_val) {$/;"	f
+writeFF_I8	./EMS_x86_64.h	/^writeFF_I8(sync_int64_t *mem_loc, int64_t mem_val) {$/;"	f
+writeXF_I4	./EMS_x86_64.h	/^writeXF_I4(sync_int32_t *mem_loc, int32_t mem_val)$/;"	f
+writeXF_I8	./EMS_x86_64.h	/^writeXF_I8(sync_int64_t *mem_loc, int64_t mem_val)$/;"	f
+writepartinfo	./patoh.h	/^int             writepartinfo;$/;"	m	struct:__anon3
+zero	./worklistc.h	/^static int zero = 0;$/;"	v
+~Graph	./graph28.h	/^Graph::~Graph() {$/;"	f	class:Graph
+~Scheduler	./scheduler19.h	/^Scheduler::~Scheduler() {$/;"	f	class:Scheduler
+~Worklist	./worklist7.h	/^Worklist::~Worklist() {$/;"	f	class:Worklist
+~Worklist	./worklistc.h	/^  ~Worklist()$/;"	f	struct:Worklist
+~Worklist_cpu	./worklist_cpu.h	/^Worklist_cpu::~Worklist_cpu() {$/;"	f	class:Worklist_cpu
