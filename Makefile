@@ -1,7 +1,7 @@
-METISDIR = /home/iresh/metis
-INCLUDEDIR = $(METISDIR)/include
-CFLAGS = -O0 -g -ccbin=/opt/centos/devtoolset-1.1/root/usr/bin/c++ -Xcompiler -fopenmp -arch=sm_30 -I$(INCLUDEDIR) -I/home/iresh/cub-1.4.1/ -DCPU_CODE -w
-#CFLAGS = -O3 -arch=sm_35 -Xcompiler -fopenmp -I$(INCLUDEDIR) -I/home/ashirbad/softwares/cub-1.4.1/ -DCPU_CODE -w
+METISDIR = /home/iresh/metis #/home/ashirbad/betweenness_centrality/metis-5.1.0
+CUBDIR   = /home/iresh/cub-1.4.1 #/home/ashirbad/softwares/cub-1.4.1
+INCLUDEDIR = -I$(METISDIR)/include -I$(CUBDIR)
+CFLAGS = -O0 -g -ccbin=/opt/centos/devtoolset-1.1/root/usr/bin/c++ -Xcompiler -fopenmp -arch=sm_30 $(INCLUDEDIR) -DCPU_CODE -w
 #CFLAGS = -O3 -arch=sm_35 -Xcompiler -fopenmp -Xcompiler -ftree-vectorize -Xcompiler -ftree-vectorizer-verbose=0 -I$(INCLUDEDIR) -I/home/ashirbad/softwares/cub-1.4.1/ -DCPU_CODE -w
 CC1FLAGS = -fopenmp -I/usr/local/cuda/include -DCPU_CODE
 LDFLAGS = -L$(METISDIR)/lib -lmetis -lgomp -L/usr/local/cuda/lib64 -lcudart -lpthread -Iinclude libpatoh.a -lm #-L/home/ashirbad/softwares/electric-fence-2.1.13 -lefencei
@@ -15,17 +15,14 @@ all: main partition_metis.exe partition_patoh.exe
 main: bfs_worklistc.o bc.o cpu_nodebased.o backward_phase.o utils.o 
 	$(CC) $(LDFLAGS) $(OBJ) -o BC
 
-#main: bfs_ddV3.o bc.o cpu_nodebased.o backward_phase.o utils.o
-#	$(CC) $(LDFLAGS) $(OBJ) -o bc
-
 bc.o: bc.cu
 	$(CC) -c $(CFLAGS) bc.cu -o bc.o
 
 bfs_worklistc.o: bfs_worklistc.cu
-	$(CC) -c $(CFLAGS) -I/home/iresh/cub-1.4.1/ bfs_worklistc.cu -o bfs_worklistc.o
+	$(CC) -c $(CFLAGS) bfs_worklistc.cu -o bfs_worklistc.o
 
 bfs_worklistc1.o: bfs_worklistc1.cu
-	$(CC) -c $(CFLAGS) -I/home/iresh/cub-1.4.1/ bfs_worklistc1.cu -o bfs_worklistc1.o
+	$(CC) -c $(CFLAGS) bfs_worklistc1.cu -o bfs_worklistc1.o
 
 bfs_ddV3.o: bfs_ddV3.cu
 	$(CC) -c $(CFLAGS) bfs_ddV3.cu -o bfs_ddV3.o
